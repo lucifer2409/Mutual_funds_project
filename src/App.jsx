@@ -20,7 +20,7 @@ import leftarrow from './assets/leftarrow.svg'
 import rightarrow from './assets/rightarrow.svg'
 import content_slider from './assets/content_slider.svg'
 import arrowdropright from './assets/arrowdropright.svg'
-import logo from './assets/logo.svg'  // Make sure to have the logo.svg file available in your assets folder
+import logo from './assets/Logo.svg'  // Updated to match the correct case
 import Leadership from './pages/Leadership'
 import EquityFunds from './pages/EquityFunds';
 import { GSAPProvider } from './context/GSAPContext';
@@ -165,7 +165,7 @@ function MainContent() {
                   Investment Philosophy
                 </span>
                 <h2 className='contentinsideblackcard2'>
-                  We’re building the fund we wish existed.
+                  We're building the fund we wish existed.
                 </h2>
               </div>
               <div id='downframeforblackcard'>
@@ -174,7 +174,7 @@ function MainContent() {
                     Before Investing: we question, challenge, and verify.
                   </span>
                   <span className='contentinsidedownframe2'>
-                    It’s not enough for a company to look good on paper. We examine the business model, capital efficiency, leadership mindset, and long-term viability.
+                    It's not enough for a company to look good on paper. We examine the business model, capital efficiency, leadership mindset, and long-term viability.
                   </span>
                 </div>
                 <div className='div1'>
