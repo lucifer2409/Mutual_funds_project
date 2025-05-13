@@ -1,0 +1,230 @@
+.equity-container {
+    padding: 32px 5vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.equity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.back-link {
+    color: #282828;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.gold-button-invest {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    color: var(--BG_color1, #FFF);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 19.6px */
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 12px;
+    background: var(--SecondaryColor, #AD8E53);
+}
+
+.buttonsgroup {
+    display: flex;
+    padding: 12px 24px 24px 24px;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 0px 0px 24px 24px;
+    background: var(--BG_color1, #FFF);
+}
+
+.header-filters {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.annual-returns,
+.returns {
+    font-family: Poppins;
+    font-size: 14px;
+    color: #666;
+}
+
+.annual-returns span,
+.returns span {
+    color: #282828;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.fund-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.fund-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    border-radius: 24px;
+    background: var(--BG_color1, #FFF);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    background: #FCF5E8;
+    padding: 12px;
+}
+
+.top-text {
+    color: #282828;
+    font-family: Poppins;
+    font-size: 12px;
+    margin: 0;
+}
+
+.card-content {
+    padding: 24px;
+    background: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.fund-type {
+    color: #AD8E53;
+    font-family: Poppins;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.fund-name {
+    color: #282828;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.returns-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.return-value {
+    font-family: Poppins;
+    font-size: 24px;
+    color: #282828;
+}
+
+.return-periods {
+    display: flex;
+    gap: 12px;
+}
+
+.period-btn {
+    padding: 2px 12px;
+    border-radius: 25px;
+    border: none;
+    background: #282828;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.period-btn.active {
+    background: #AD8E53;
+}
+
+.investment-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.detail-column {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.detail-column label {
+    color: #AD8E53;
+    font-family: Poppins;
+    font-size: 12px;
+}
+
+.value-box {
+    background: rgba(242, 242, 242, 0.2);
+    padding: 4px 12px;
+    border-radius: 8px;
+    color: #282828;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.invest-btn {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    border: 1px solid var(--Primarycolor, #282828);
+    background: var(--BG_color1, #FFF);
+    flex: 1 0 0;
+    color: var(--Primarycolor, #282828);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 19.6px */
+    /* transition: background-color 0.3s; */
+}
+
+@media (max-width: 1200px) {
+    .fund-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .fund-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .equity-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .header-filters {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
