@@ -4,6 +4,7 @@ import logopart1 from './assets/logopart1.svg'
 import logopart2 from './assets/logopart2.svg'
 import dropdown from './assets/Group.svg'
 import calculatorIcon from './assets/stock-line.svg'
+import logo2 from './assets/logo2.svg'
 import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
@@ -14,16 +15,7 @@ const Navbar = () => {
             <div id='insideNavbar1'>
                 <div id='leftsideofthenavbar'>
                     <div id='container1' onClick={() => navigate('/')} style={{cursor: 'pointer'}}>
-                        <img src={logoImage} alt="logo" id='logo1' />
-                        <div id='container2'>
-                            <div id='frame1'>
-                                <img src={logopart1} alt="logo" id='logo2' />
-                                <img src={logopart2} alt="logo" id='logo3' />
-                            </div>
-                            <h1 id='heading1'>
-                                MUTUAL FUND
-                            </h1>
-                        </div>
+                        <img src={logo2} alt="" />
                     </div>
                     <div id='container3'>
                         <nav className='navbar-list' onClick={() => navigate('/leadership')}>About us</nav>

@@ -32,26 +32,52 @@ const EquityFunds = () => {
                     {[...Array(6)].map((_, index) => (
                         <div className="fund-card" key={index}>
                             <div className="card-content">
-                                <div className="fund-type">LARGE CAP</div>
-                                <h3 className="fund-name">Wealth Large Cap Fund</h3>
-
-                                <div className="returns-section">
-                                    <div className="return-value">2.62%</div>
-                                    <div className="return-periods">
-                                        <button className="period-btn active">1Y</button>
-                                        <button className="period-btn">3Y</button>
-                                        <button className="period-btn">5Y</button>
+                                <div className='top-heading-card-content'>
+                                    <h3 className="fund-name">Wealth Large Cap Fund</h3>
+                                    <div className="fund-type">
+                                        LARGE CAP
+                                    </div>
+                                </div>
+                                <div className='returns-section'>
+                                    <div className='leftsideofreturnsection'>
+                                        <h1 className='headingofleftsideofreturnsection'>Annualized returns</h1>
+                                        <div className='bottomsectionofleftsidereturnsection'>
+                                            <div className='defaultselectedbutton'>
+                                                1Y
+                                            </div>
+                                            <div className='otherbuttons'>
+                                                3Y
+                                            </div>
+                                            <div className='otherbuttons'>
+                                                5Y
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='rightsideofreturnsection'>
+                                        <span>2.62%</span>
                                     </div>
                                 </div>
 
-                                <div className="investment-details">
-                                    <div className="detail-column">
-                                        <label>Total investment</label>
-                                        <div className="value-box">₹10,000</div>
+                                <div className='investment-div'>
+                                    <div className='leftsideofinvestmentdiv'>
+                                        <div id='insideleftsideofinvestmentdiv'>
+                                            <span id='topsectionofleftsideofinvestmentdiv'>
+                                                Risk Factor
+                                            </span>
+                                            <span id='bottomsectionofleftsideofinvestmentdiv'>
+                                                Very High Riskinfo
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div className="detail-column">
-                                        <label>Start date</label>
-                                        <div className="value-box">2100</div>
+                                    <div className='leftsideofinvestmentdiv'>
+                                        <div id='insideleftsideofinvestmentdiv'>
+                                            <span id='topsectionofleftsideofinvestmentdiv'>
+                                                Start investing with min
+                                            </span>
+                                            <span id='bottomsectionofleftsideofinvestmentdiv'>
+                                                ₹100
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
 
