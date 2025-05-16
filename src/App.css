@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
 
 body,
 html {
@@ -10,7 +11,7 @@ html {
 /* Keep your other styles */
 .navbar {
   display: flex;
-  width: 93vw;
+  width: 100%;
   padding: 12px 48px;
   align-items: center;
   gap: 48px;
@@ -30,6 +31,22 @@ html {
   /* Reset height */
   background: transparent;
   /* Make background transparent */
+}
+
+.leftsideofbelowcontainer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+}
+
+.leftsideofnav1 {
+  display: flex;
+  width: 420px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
 }
 
 #leftsideofthenavbar {
@@ -54,7 +71,8 @@ html {
   /* Reset height */
   background: transparent;
   /* Make background transparent */
-  cursor: pointer; /* Added cursor style here */
+  cursor: pointer;
+  /* Added cursor style here */
 }
 
 #logo1 {
@@ -156,9 +174,11 @@ html {
 }
 
 .dropdown-menu {
-  display: none; /* Initially hidden */
+  display: none;
+  /* Initially hidden */
   position: absolute;
-  top: calc(100% + 15px); /* Position after the ::after bridge */
+  top: calc(100% + 15px);
+  /* Position after the ::after bridge */
   left: 50%;
   transform: translateX(-50%);
   width: 220px;
@@ -420,6 +440,12 @@ html {
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
+}
+
+.insidecontainerofnav1 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 48px;
 }
 
 #contentinsideblackcard1 {
@@ -958,7 +984,7 @@ html {
 /* Mainframe 5 - Signup Form Section */
 #mainframe5 {
   display: flex;
-  width: 90%;
+  width: 100%;
   padding: 0px 5vw;
   justify-content: center;
   align-items: center;
@@ -999,6 +1025,13 @@ html {
   flex-direction: column;
   flex: 1;
   gap: 8px;
+}
+
+#belowcontainer1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  align-self: stretch;
 }
 
 .form-group label {
@@ -1066,7 +1099,7 @@ html {
 /* Mainframe 6 - SIP Calculator */
 #mainframe6 {
   display: flex;
-  width: 90%;
+  width: 100%;
   padding: 72px 5vw;
   justify-content: center;
   align-items: center;
@@ -1261,32 +1294,241 @@ html {
   margin-bottom: 4px;
 }
 
-.result-amount {
-  color: #282828;
+.maincontainerofnav1 {
+  display: none;
+  width: 702px;
+  height: 220px;
+  /* Initially hidden */
+  position: absolute;
+  top: calc(100% + 15px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 702px;
+  padding: 24px;
+  border-radius: 16px;
+  background: #282828;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+
+
+.navbar-lists:hover .maincontainerofnav1 {
+  display: block;
+  width: 702px;
+  height: 220px;
+  /* Show on hover */
+}
+
+.navbar-lists:hover .maincontainerofnav2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 555px;
+  height: 220px;
+  /* Show on hover */
+}
+
+
+.ourfundstext {
+  color: var(--Primary-Text, #FFF);
   font-family: Poppins;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.monthly-investment-group {
+.iconsset1 {
   display: flex;
-  justify-content: space-between;
+  width: 16px;
+  height: 16px;
+  justify-content: center;
   align-items: center;
+}
+
+.textinsidenav1rightside {
+  color: var(--Text_secondary, #B7B7B7);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.boxes2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   align-self: stretch;
 }
 
-.expected-return-group {
+.container1ofnav1rightside {
   display: flex;
-  justify-content: space-between;
+  width: 186px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.heading1 {
+  color: var(--Primary-Text, #FFF);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.rightsideofnav1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.maincontainerofnav1::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  width: 702px;
+  height: 220px;
+  transform: translateX(-50%);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #282828;
+}
+
+
+.maincontainerofnav2 {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  display: none;
+  width: 555px;
+  height: 220px;
+  /* Initially hidden */
+  position: absolute;
+  top: calc(100% + 15px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 555px;
+  padding: 24px;
+  border-radius: 16px;
+  background: #282828;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* Update existing dropdown styles */
+.boxes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   align-self: stretch;
 }
 
-.investment-duration-group {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.maincontainerofnav2 {
+  display: none;
+  position: absolute;
+  width: 555px;
+  height: 220px;
+  border-radius: 16px;
+  top: calc(100% + 15px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: #282828;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.firstcontainerofnav2 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+#headingofnav2 {
+  color: var(--SecondaryColor, #AD8E53);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   align-self: stretch;
+}
+
+.leftsideecontainerofnav2 {
+  display: flex;
+  width: 180px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+#belowcontainerofnav2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+}
+
+.textinsidenav2 {
+  color: var(--Text_secondary, #B7B7B7);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.rightsidecontainerofnav2 {
+  width: 279px;
+  height: 150px;
+  border-radius: 12px;
+  background: #474646;
+}
+
+.iconsset3 {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxes3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.leftsidecontainerofnav2 {
+  display: flex;
+  width: 180px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.boxes:hover .equity-link {
+  color: #AD8E53;
+}
+
+/* Make entire box clickable */
+.boxes {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 #mainframe7 {
@@ -1333,6 +1575,30 @@ html {
   height: 24px;
   justify-content: center;
   align-items: center;
+}
+
+.boxestext {
+  position: relative;
+  /* Make it clickable */
+  z-index: 2;
+  /* Ensure it's above other elements */
+  cursor: pointer;
+  color: var(--Text_secondary, #B7B7B7);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  pointer-events: auto;
+}
+
+.boxes {
+  pointer-events: auto;
+}
+
+.boxes:hover .boxestext {
+  color: #AD8E53;
+  cursor: pointer;
 }
 
 /* Media queries for responsiveness */

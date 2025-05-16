@@ -1,6 +1,6 @@
 import { createContext, useContext } from 'react';
 import gsap from 'gsap';
-
+import React from 'react';
 const GSAPContext = createContext();
 
 export const GSAPProvider = ({ children }) => {
