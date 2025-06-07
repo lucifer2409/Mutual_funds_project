@@ -1,4 +1,4 @@
-import { createContext, useContext } from 'react';
+import { createContext, useContext , useRef } from 'react';
 import gsap from 'gsap';
 import React from 'react';
 const GSAPContext = createContext();

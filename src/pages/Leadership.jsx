@@ -30,11 +30,11 @@ const Leadership = () => {
     <>
       <Navbar />
       <div className='h-[519px] w-[1440px] bg-[#282828] flex pt-[24px] pr-[100px] pb-[100px] pl-[100px]
- flex-col items-center gap-[48px]'>
+ flex-col items-center gap-[48px]' id='mainframe1forleadership'>
         <img src={birdimage} alt="" className='w-[1551px] h-[275px]' />
         <span id='firsttext'>More Than a Mutual Fund.  <span id='secondtext'>A Mindset.</span></span>
       </div>
-      <div className='flex w-[1240px] p-[48px] justify-center items-center gap-[10px] rounded-[24px] bg-[#FFFFFF] shadow-[0px_4px_24px_rgba(0,0,0,0.10)] absolute top-[660px] left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]'>
+      <div className='flex w-[1240px] p-[48px] justify-center items-center gap-[10px] rounded-[24px] bg-[#FFFFFF] shadow-[0px_4px_24px_rgba(0,0,0,0.10)] absolute top-[660px] left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]' id='mainframe2forleadership'>
         <span className='othertext flex flex-col gap-[16px]'>
           <div>
             <span id='ourmutualfundtext'>Our Mutual Fund is part of The Wealth Company —</span> the asset and wealth management arm of the Pantomath Group, a name trusted for its depth in merchant banking, private equity, and capital markets. Our roots shape the way we invest: with precision, discipline, and an eye for potential long before it’s widely recognized.
@@ -48,8 +48,8 @@ const Leadership = () => {
         </span>
       </div>
 
-      <div className='flex w-[1240px] pt-[72px] pb-[72px] flex-col items-center gap-[48px] bg-[#ffffff] absolute top-[1400px] left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]'>
-        <div className='flex w-[608px] flex-col items-center gap-[8px]'>
+      <div className='flex w-[1240px] pt-[72px] pb-[72px] flex-col items-center gap-[48px] bg-[#ffffff] absolute top-[1400px] left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]' id='mainframe3forleadership'>
+        <div className='flex w-[608px] flex-col items-center gap-[8px]' id='textdivforleadership'>
           <div id='toptextdiv'>
             <span id='insidetextfortoptextdiv'>The Thinking:</span>
           </div>
@@ -60,7 +60,8 @@ const Leadership = () => {
         </div>
         <div className='flex flex-col items-center gap-[24px] w-[100%]'>
           <span id='leaderstext'>Leaders</span>
-          <div className='flex items-center gap-[24px] w-[1240px] overflow-auto scroll-container' ref={scrollContainerRef}>
+          <div className='flex items-center gap-[24px] w-[1240px] overflow-auto scroll-container' ref={scrollContainerRef} id='scrollablediv'>
+
             <div className='cardsfortheleaders'>
               <div id='frame1'>
                 <span className='topofframe1'>Prasanna Pathak</span>
@@ -77,6 +78,15 @@ const Leadership = () => {
                 </div>
               </div>
             </div>
+
+
+            {/* <div className='card-back'>
+              <div id='insidecardback'>
+                <div id='topofinsidecardback'>
+                  spapa
+                </div>
+              </div>
+            </div> */}
             <div className='cardsfortheleaders'>
               <div id='frame1'>
                 <span className='topofframe1'>Prasanna Pathak</span>
@@ -158,7 +168,7 @@ const Leadership = () => {
         <span id='trustee'>
           Trustee
         </span>
-        <div className='flex items-center gap-[24px]'>
+        <div className='flex items-center gap-[24px]' id='trusteescards'>
           <div className='trusteecard'>
             <div id='topoftrusteecard'>
               <div id='imagedivfortrustee'>
@@ -258,7 +268,7 @@ const Leadership = () => {
         <span id='trustee'>
           Directors
         </span>
-        <div className='flex items-center gap-[24px]'>
+        <div className='flex items-center gap-[24px]' id='directorscards'>
           <div className='trusteecard'>
             <div id='topoftrusteecardfordirector'>
               <div id='imagedivfortrustee'>
@@ -358,7 +368,7 @@ const Leadership = () => {
         <span id='ciotext'>
           CIO
         </span>
-        <div className='flex items-center gap-[24px]'>
+        <div className='flex items-center gap-[24px]' id='ciocards'>
           <div className='ciocard'>
             <div id='topofciocard'>
               <span id='textfortopofciocard'>“Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development.”</span>
@@ -514,60 +524,60 @@ const Leadership = () => {
       </div>
 
       <div id='mainframe8' className='absolute top-[5550px] left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col gap-[48px] bg-[#ffffff] w-[1440px] h-[100%]'>
-        <div className="footer-container" style={{margin:'0px'}}>
+        <div className="footer-container" style={{ margin: '0px' }}>
           <div className="footer-column logo-column">
-        <div className="footer-logo">
-          <img src={logo} alt="The Wealth Company" className="footer-logo-img" />
-          <div className="footer-logo-text">
-            <div className="company-name">The Wealth Company</div>
-            <div className="company-subtitle">MUTUAL FUND</div>
+            <div className="footer-logo">
+              <img src={logo} alt="The Wealth Company" className="footer-logo-img" />
+              <div className="footer-logo-text">
+                <div className="company-name">The Wealth Company</div>
+                <div className="company-subtitle">MUTUAL FUND</div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className='mainframeoffootercolumn'>
-        <div className="footer-column">
-          <h3>Products Offered</h3>
-          <ul className="footer-links">
-            <li><a href="#">Equity Funds</a></li>
-            <li><a href="#">Debt Funds</a></li>
-            <li><a href="#">Hybrid Funds</a></li>
-            <li><a href="#">Tax Saver Fund (ELSS)</a></li>
-            <li><a href="#">International Funds</a></li>
-            <li><a href="#">Domestic FOF's</a></li>
-            <li><a href="#">Index Funds</a></li>
-          </ul>
-        </div>
+          <div className='mainframeoffootercolumn'>
+            <div className="footer-column">
+              <h3>Products Offered</h3>
+              <ul className="footer-links">
+                <li><a href="#">Equity Funds</a></li>
+                <li><a href="#">Debt Funds</a></li>
+                <li><a href="#">Hybrid Funds</a></li>
+                <li><a href="#">Tax Saver Fund (ELSS)</a></li>
+                <li><a href="#">International Funds</a></li>
+                <li><a href="#">Domestic FOF's</a></li>
+                <li><a href="#">Index Funds</a></li>
+              </ul>
+            </div>
 
-        <div className="footer-column">
-          <h3>Products Offered</h3>
-          <ul className="footer-links">
-            <li><a href="#">Downloads</a></li>
-            <li><a href="#">Non Business Days</a></li>
-            <li><a href="#">NAV History</a></li>
-            <li><a href="#">IDCW</a></li>
-            <li><a href="#">Total Expens Ration</a></li>
-            <li><a href="#">Press Release</a></li>
-          </ul>
-        </div>
+            <div className="footer-column">
+              <h3>Products Offered</h3>
+              <ul className="footer-links">
+                <li><a href="#">Downloads</a></li>
+                <li><a href="#">Non Business Days</a></li>
+                <li><a href="#">NAV History</a></li>
+                <li><a href="#">IDCW</a></li>
+                <li><a href="#">Total Expens Ration</a></li>
+                <li><a href="#">Press Release</a></li>
+              </ul>
+            </div>
 
-        <div className="footer-column">
-          <h3>Outer information</h3>
-          <ul className="footer-links">
-            <li><a href="/equity-funds">Equity Funds</a></li>
-            <li><a href="#">Debt Funds</a></li>
-            <li><a href="#">Hybrid Funds</a></li>
-            <li><a href="#">Tax Saver Fund (ELSS)</a></li>
-            <li><a href="#">International Funds</a></li>
-            <li><a href="#">Domestic FOF's</a></li>
-            <li><a href="#">Index Funds</a></li>
-          </ul>
-        </div>
-      </div>
-    </div >
+            <div className="footer-column">
+              <h3>Outer information</h3>
+              <ul className="footer-links">
+                <li><a href="/equity-funds">Equity Funds</a></li>
+                <li><a href="#">Debt Funds</a></li>
+                <li><a href="#">Hybrid Funds</a></li>
+                <li><a href="#">Tax Saver Fund (ELSS)</a></li>
+                <li><a href="#">International Funds</a></li>
+                <li><a href="#">Domestic FOF's</a></li>
+                <li><a href="#">Index Funds</a></li>
+              </ul>
+            </div>
+          </div>
+        </div >
 
-      <div className="copyright-bar">
-        <p>Copyright © 2025 Wealth Company Private Limited. | All rights reserved.</p>
-      </div>
+        <div className="copyright-bar">
+          <p>Copyright © 2025 Wealth Company Private Limited. | All rights reserved.</p>
+        </div>
       </div >
     </>
   );

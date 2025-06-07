@@ -5,9 +5,15 @@ import viteLogo from '/vite.svg'
 import arrowrightline from './assets/arrowrightline.svg'
 import arrowleftline from './assets/arrowleftline.svg'
 import layer1 from './assets/Layer_1.svg'
+import { ParallaxLayer } from '@react-spring/parallax'
+import { Parallax } from '@react-spring/parallax'
+import Polygon2 from './assets/Polygon2.svg'
+import downaarrowwithcircle from './assets/downarrowwithcircle.svg'
 import React from 'react'
 import './App.css'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import hand from './assets/hand.svg'
 import OBJECTS from './assets/OBJECTS.svg'
 import Polygon1 from './assets/Polygon1.svg'
 import facebook from './assets/facebook.svg'
@@ -105,6 +111,9 @@ function MainContent() {
   return (
     <>
       <Navbar />
+
+ 
+
       <div id='mainframe1' ref={heroRef}>
         <div id='leftframe'>
           <div id='insideleftframe1'>
@@ -192,6 +201,29 @@ function MainContent() {
 
         </div>
       </div>
+      {/* <div className='background'>
+        <img src={Polygon2} alt="" className='h-[40vh]' />
+      </div> */}
+
+      <div className='parallaxContainer1'>
+        <div className='insideparallaxContainer1'>
+          <div className='leftsideofparallaxContainer1'>
+            <span id='whyustext'>Why us?</span>
+            <span id='text2insideparallaxContainer1'>
+              Where Others  Scan,
+              We Scrutinize.
+            </span>
+            <span id='text3insideparallaxContainer1'>
+              It starts with investigative depth: not just numbers, but management intent, competitive realities, and what could go wrong. We go further because surface-level filters miss what matters.
+            </span>
+            <img src={downaarrowwithcircle} alt="" className='w-[32px] h-[32px]' id='downarrow' />
+          </div>
+          <div className='rightsideofparallaxContainer1'>
+            <img src={hand} alt="" />
+          </div>
+        </div>
+      </div>
+
       <div id='mainframe3'>
         <img src={leftarrow} alt="" className='iconbuttons' />
         <div id='middleframe1'>
@@ -223,7 +255,7 @@ function MainContent() {
           <div id='middleframeofmiddleframe1'>
             <div className='cardsofmiddleframe1'>
               <div className='topframeofcard'>
-                <span id='textinsidetopframe'>The power of stable, trusted companies</span>
+                <span id='textinsidetopframe'>Coming soon...</span>
               </div>
               <div className='bottomframeofcard'>
                 <div className='insidebottomframeofcard1'>
@@ -265,7 +297,7 @@ function MainContent() {
             </div>
             <div className='cardsofmiddleframe1'>
               <div className='topframeofcard'>
-                <span id='textinsidetopframe'>The power of stable, trusted companies</span>
+                <span id='textinsidetopframe'>Coming soon...</span>
               </div>
               <div className='bottomframeofcard'>
                 <div className='insidebottomframeofcard1'>
@@ -307,7 +339,7 @@ function MainContent() {
             </div>
             <div className='cardsofmiddleframe1'>
               <div className='topframeofcard'>
-                <span id='textinsidetopframe'>The power of stable, trusted companies</span>
+                <span id='textinsidetopframe'>Coming soon...</span>
               </div>
               <div className='bottomframeofcard'>
                 <div className='insidebottomframeofcard1'>
