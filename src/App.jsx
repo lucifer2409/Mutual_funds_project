@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Form } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import arrowrightline from './assets/arrowrightline.svg'
@@ -15,6 +15,8 @@ import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import hand from './assets/hand.svg'
 import OBJECTS from './assets/OBJECTS.svg'
+import SignupForm from './SignupForm'
+// import Form from './form'
 import Polygon1 from './assets/Polygon1.svg'
 import facebook from './assets/facebook.svg'
 import Navbar from './Navbar'
@@ -112,7 +114,7 @@ function MainContent() {
     <>
       <Navbar />
 
- 
+
 
       <div id='mainframe1' ref={heroRef}>
         <div id='leftframe'>
@@ -771,10 +773,11 @@ function App() {
           <Route path="/" element={<MainContent />} />
           <Route path="/leadership" element={<Leadership />} />
           <Route path="/equity-funds" element={<EquityFunds />} />
+          <Route path="/signup" element={<SignupForm />} />
         </Routes>
       </GSAPProvider>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -139,7 +139,7 @@ const Navbar = () => {
                     </div>
                     <div id='rightsideofthenavbar'>
                         <button className='Navbarbuttons'>
-                            <span id='button1'>
+                            <span id='button1' onClick={() => navigate('/signup')} className='cursor-pointer'>
                                 Join the waiting list
                             </span>
                         </button>
