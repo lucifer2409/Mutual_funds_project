@@ -3135,5 +3135,9 @@ html {
       flex-direction: column;
       width: 100%;
     }
+    #frameforlayer0{
+      width: 100%;
+      overflow-x: auto;
+    }
   }
 }
