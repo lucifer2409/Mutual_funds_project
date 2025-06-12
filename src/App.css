@@ -10,6 +10,368 @@ html {
 
 /* Keep your other styles */
 
+#middlesectionofinvestorservicespage {
+  display: flex;
+  padding: 72px 5vw;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+#bottomofbottomtext {
+  color: var(--Grey_Color, #666);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  align-self: stretch;
+  line-height: normal;
+}
+
+#toptextofbottomsection {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  align-self: stretch;
+  line-height: normal;
+}
+
+#topsectionofcardforinvestorservices {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+#titleforcardforinvestorservices {
+  color: #000;
+  align-self: stretch;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.checknowbutton {
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid var(--Line, #E2E2E2);
+  background: var(--BG2, rgba(242, 242, 242, 0.20));
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#subtitleforcardforinvestorservices {
+  color: var(--Grey_Color, #666);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: stretch;
+}
+
+#bottomsectionfortopsection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.imageforcardforinvestorservices {
+  width: 72px;
+  height: 72px;
+}
+
+.cardforinvestorservices {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  border-radius: 12px;
+  border: 1px solid var(--Line, #E2E2E2);
+  background: var(--BG_color1, #FFF);
+  align-self: stretch;
+}
+
+.outersectionforthecards {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+
+#bottomsectionofmiddlesectionofinvestorservicespage {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+#rightsectionofbottomsectiondropdown {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+#topsection {
+  display: flex;
+  width: 100%;
+  padding: 120px 100px 72px 100px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  background: var(--Color-3, #FCF5E8);
+}
+
+#factsheet-subtitle {
+  align-self: stretch;
+  color: var(--Grey_Color, #666);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#lefttextofbottomsectiondropdown {
+  color: var(--Primary-Text, #FFF);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 128.571% */
+  letter-spacing: 0.32px;
+}
+
+#bottomsectiondropdown {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  flex: 1 0 0;
+  width: 420px;
+  border-radius: 50px;
+  background: var(--Grey_Color, #666);
+}
+
+#factsheet-title {
+  color: var(--Primarycolor, #282828);
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#rightsectionofmiddlesection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#rightsectionofmiddlesectiondropdownimg {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  /* transform: rotate(-90deg); */
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  background: var(--Color-3, #FCF5E8);
+}
+
+
+#righttextofmiddlesectiondropdown {
+  color: var(--SecondaryColor, #AD8E53);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  /* 150% */
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+#rightsectionofmiddlesectiondropdown {
+  display: flex;
+  padding: 8px 12px;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 24px;
+  background: var(--Color-3, #FCF5E8);
+}
+
+#righttextofmiddlesection {
+  color: #000;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  /* 150% */
+  letter-spacing: 0.32px;
+}
+
+#sharebutton {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  border-radius: 25px;
+  background: var(--Color-3, #FCF5E8);
+  gap: 10px;
+}
+
+.rightsidebuttonsforcards {
+  display: flex;
+  padding: 8px 12px;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 24px;
+  background: var(--Color-3, #FCF5E8);
+  gap: 8px;
+}
+
+.textforbuttonsforcards {
+  color: var(--SecondaryColor, #AD8E53);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  /* 150% */
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+#leftsectionofcardofbottomsectionofmiddlesection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1 0 0;
+}
+
+#rightsectionofcardofbottomsectionofmiddlesection {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.lefttextbottom {
+  color: var(--Text_secondary, #B7B7B7);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#lefttextofcardofbottomsectionofmiddlesection {
+  color: var(--SecondaryColor, #AD8E53);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#cardofbottomsectionofmiddlesection {
+  display: flex;
+  width: 100%;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 24px;
+  border: 1px solid var(--SecondaryColor, #AD8E53);
+  background: var(--BG_color1, #FFF);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10);
+}
+
+#topsectionofmiddlesectionofinvestorservicespage {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  align-self: stretch;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#bottomsectionofmiddlesection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+#lefttextofmiddlesection {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#middlesection {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 72px 5vw;
+  gap: 12px;
+}
+
+
+#topsectionofmiddlesection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: stretch;
+}
+
+#topsectionofinsidetopsection {
+  display: flex;
+  width: 606px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+#insidetopsection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+}
+
 
 
 
@@ -2503,7 +2865,7 @@ html {
 #topsection {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   align-self: stretch;
 }
 

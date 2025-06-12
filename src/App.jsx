@@ -25,6 +25,7 @@ import linkedin from './assets/linkedin.svg'
 import youtube from './assets/youtube.svg'
 import insta from './assets/insta.svg'
 import cash from './assets/cash.svg'
+import Investorservicespage from './pages/Investorservicespage'
 import leftarrow from './assets/leftarrow.svg'
 import rightarrow from './assets/rightarrow.svg'
 import content_slider from './assets/content_slider.svg'
@@ -34,6 +35,7 @@ import Leadership from './pages/Leadership'
 import EquityFunds from './pages/EquityFunds';
 import { GSAPProvider } from './context/GSAPContext';
 import { useGSAP } from './context/GSAPContext';
+import Factsheet from './pages/Factsheet'
 
 function MainContent() {
   const { staggerCards } = useGSAP();
@@ -725,8 +727,8 @@ function MainContent() {
                 <li><a href="#">Hybrid Funds</a></li>
                 <li><a href="#">Tax Saver Fund (ELSS)</a></li>
                 <li><a href="#">International Funds</a></li>
-                <li><a href="#">Domestic FOF's</a></li>
-                <li><a href="#">Index Funds</a></li>
+                <li><Link to="/factsheet">Fact sheet</Link></li>
+                <li><Link to="/investor-services">Investor services</Link></li>
               </ul>
             </div>
 
@@ -774,6 +776,9 @@ function App() {
           <Route path="/leadership" element={<Leadership />} />
           <Route path="/equity-funds" element={<EquityFunds />} />
           <Route path="/signup" element={<SignupForm />} />
+          <Route path="/factsheet" element={<Factsheet />} />
+          <Route path="/investor-services" element={<Investorservicespage />} />
+          {/* Add other routes as needed */}
         </Routes>
       </GSAPProvider>
     </Router>
