@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../Navbar'
 import money from '../assets/money.svg'
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo.svg'  // Updated to match the correct 
+import logo from '../assets/Logo.svg'
 const Investorservicespage = () => {
     return (
         <>
