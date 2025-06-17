@@ -14,6 +14,11 @@ import add from '../assets/add.svg'; // Add add icon image
 import rightarrow3 from '../assets/rightarrow3.svg'; // Add right arrow image for scrolling
 import trailing_box from '../assets/trailing_box.svg'; // Add trailing box image
 import { useRef } from 'react';
+import facebook from '../assets/facebook.svg'; // Add Facebook icon image
+import twitter from '../assets/twitter.svg'; // Add Twitter icon image
+import linkedin from '../assets/linkedin.svg'; // Add LinkedIn icon image
+import insta from '../assets/insta.svg'; // Add Instagram icon image
+import youtube from '../assets/youtube.svg'; // Add YouTube icon image
 import Phone from '../assets/Phone.svg'; // Add phone icon image
 import mapimage from '../assets/mapimage.png'; // Add map image
 import layer0 from '../assets/layer0.png'; // Add layer image
@@ -524,60 +529,62 @@ const Leadership = () => {
       </div>
 
       <div id='mainframe8' className='absolute top-[5550px] left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col gap-[48px] bg-[#ffffff] w-[1440px] h-[100%]'>
-        <div className="footer-container" style={{ margin: '0px' }}>
-          <div className="footer-column logo-column">
-            <div className="footer-logo">
-              <img src={logo} alt="The Wealth Company" className="footer-logo-img" />
-              <div className="footer-logo-text">
-                <div className="company-name">The Wealth Company</div>
-                <div className="company-subtitle">MUTUAL FUND</div>
+        <div id='insideframeofmainframe8'>
+          <img src={logo} alt="" />
+          <div id='contentinsideframeofmainframe8'>
+            <div id='insidecontentinsideframeofmainframe8'>
+              <span id='titleofinsidecontentinsideframeofmainframe8'>
+                QUICK LINK
+              </span>
+              <div className='linksofinsidecontentinsideframeofmainframe8'>
+                <span className='linktitle2'>About Us</span>
+                <div className='linkseparator'>
+                  <span className='linktitle2'>Our Funds</span>
+                  <span className='goldenlink'>Coming soon...</span>
+                </div>
+                <div className='linkseparator'>
+                  <span className='linktitle2'>Tools & Resources</span>
+                  <span className='goldenlink'>Coming soon...</span>
+                </div>
+              </div>
+            </div>
+            <div id='insidecontentinsideframeofmainframe8'>
+              <span id='titleofinsidecontentinsideframeofmainframe8'>
+                SEBI
+              </span>
+              <div className='linksofinsidecontentinsideframeofmainframe8'>
+                <span className='linktitle2'>SEBU Smart ODR</span>
+                <span className='linktitle2'>SEBI Scores</span>
+                <span className='linktitle2'>SEBU Scores App (ios)</span>
+                <span className='linktitle2'>SEBU Scores App (Android)</span>
+
+              </div>
+            </div>
+            <div id='divforconnect'>
+              <span id='titleofdivforconnect'>CONNECT WITH US</span>
+              <div id='divinsideconnect'>
+                <div className='socialmediaicondiv'>
+                  <img src={facebook} alt="" className='socialmediaicon' />
+                </div>
+                <div className='socialmediaicondiv'>
+                  <img src={twitter} alt="" className='socialmediaicon' />
+                </div>
+                <div className='socialmediaicondiv'>
+                  <img src={linkedin} alt="" className='socialmediaicon' />
+                </div>
+                <div className='socialmediaicondiv'>
+                  <img src={insta} alt="" className='socialmediaicon' />
+                </div>
+                <div className='socialmediaicondiv'>
+                  <img src={youtube} alt="" className='socialmediaicon' />
+                </div>
               </div>
             </div>
           </div>
-          <div className='mainframeoffootercolumn'>
-            <div className="footer-column">
-              <h3>Products Offered</h3>
-              <ul className="footer-links">
-                <li><a href="#">Equity Funds</a></li>
-                <li><a href="#">Debt Funds</a></li>
-                <li><a href="#">Hybrid Funds</a></li>
-                <li><a href="#">Tax Saver Fund (ELSS)</a></li>
-                <li><a href="#">International Funds</a></li>
-                <li><a href="#">Domestic FOF's</a></li>
-                <li><a href="#">Index Funds</a></li>
-              </ul>
-            </div>
-
-            <div className="footer-column">
-              <h3>Products Offered</h3>
-              <ul className="footer-links">
-                <li><a href="#">Downloads</a></li>
-                <li><a href="#">Non Business Days</a></li>
-                <li><a href="#">NAV History</a></li>
-                <li><a href="#">IDCW</a></li>
-                <li><a href="#">Total Expens Ration</a></li>
-                <li><a href="#">Press Release</a></li>
-              </ul>
-            </div>
-
-            <div className="footer-column">
-              <h3>Outer information</h3>
-              <ul className="footer-links">
-                <li><a href="/equity-funds">Equity Funds</a></li>
-                <li><a href="#">Debt Funds</a></li>
-                <li><a href="#">Hybrid Funds</a></li>
-                <li><a href="#">Tax Saver Fund (ELSS)</a></li>
-                <li><a href="#">International Funds</a></li>
-                <li><a href="#">Domestic FOF's</a></li>
-                <li><a href="#">Index Funds</a></li>
-              </ul>
-            </div>
-          </div>
-        </div >
-
-        <div className="copyright-bar">
-          <p>Copyright © 2025 Wealth Company Private Limited. | All rights reserved.</p>
         </div>
+        <span id='copyrighttext'>
+          Copyright © 2025 Wealth Company Private Limited. | All rights reserved.
+        </span>
       </div >
     </>
   );

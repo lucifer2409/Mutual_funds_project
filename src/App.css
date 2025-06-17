@@ -867,6 +867,26 @@ html {
   position: absolute;
 }
 
+#divforconnect {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+}
+
+#titleofdivforconnect {
+  align-self: stretch;
+  color: var(--SecondaryColor, #AD8E53);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.25px;
+  text-transform: uppercase;
+}
+
 .cashimage {
   position: absolute;
   z-index: 1;
@@ -3046,6 +3066,120 @@ html {
   gap: 12px;
 }
 
+#mainframe8 {
+  width: 100%;
+  /* top: 6200px; */
+  display: flex;
+  padding: 100px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 72px;
+}
+
+#divinsideconnect {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.socialmediaicondiv {
+  display: flex;
+  height: 24px;
+  padding: 6px;
+  align-items: center;
+  gap: 5px;
+  border-radius: 4px;
+  background: var(--BG_color1, #FFF);
+}
+
+.socialmediaicondiv img {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+.linksofinsidecontentinsideframeofmainframe8 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.linktitle2 {
+  color: var(--Text_secondary, #B7B7B7);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.linktitle2:hover {
+  color: var(--SecondaryColor, #AD8E53);
+  cursor: pointer;
+}
+
+.goldenlink {
+  color: var(--SecondaryColor, #AD8E53);
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.linkseparator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#titleofinsidecontentinsideframeofmainframe8 {
+  align-self: stretch;
+  color: var(--SecondaryColor, #AD8E53);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+#insidecontentinsideframeofmainframe8 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+}
+
+
+#contentinsideframeofmainframe8 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+  align-self: stretch;
+}
+
+#copyrighttext {
+  color: var(--Primary-Text, #FFF);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#insideframeofmainframe8 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  align-self: stretch;
+}
+
 .terms-and-conditions-link {
   color: var(--SecondaryColor, #AD8E53);
   font-feature-settings: 'liga' off, 'clig' off;
@@ -3723,11 +3857,7 @@ html {
       min-width: 100%;
     }
 
-    #mainframe8 {
-      width: 100%;
-      top: 6200px;
-      padding: 24px;
-    }
+
 
     .footer-container {
       flex-direction: column;
