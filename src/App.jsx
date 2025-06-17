@@ -11,6 +11,7 @@ import Polygon2 from './assets/Polygon2.svg'
 import downaarrowwithcircle from './assets/downarrowwithcircle.svg'
 import React from 'react'
 import './App.css'
+import Disclaimer from './pages/Disclaimer'
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import hand from './assets/hand.svg'
@@ -778,6 +779,7 @@ function App() {
           <Route path="/" element={<MainContent />} />
           <Route path="/leadership" element={<Leadership />} />
           <Route path="/equity-funds" element={<EquityFunds />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/signup" element={<SignupForm />} />
           <Route path="/factsheet" element={<Factsheet />} />
           <Route path="/investor-services" element={<Investorservicespage />} />
