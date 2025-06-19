@@ -14,6 +14,7 @@ import './App.css'
 import Disclaimer from './pages/Disclaimer'
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import Totalexpenseratio from './pages/Totalexpenseratio'
 import hand from './assets/hand.svg'
 import OBJECTS from './assets/OBJECTS.svg'
 import SignupForm from './SignupForm'
@@ -781,6 +782,7 @@ function App() {
           <Route path="/equity-funds" element={<EquityFunds />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/signup" element={<SignupForm />} />
+          <Route path="/total-expense-ratio" element={<Totalexpenseratio />} />
           <Route path="/factsheet" element={<Factsheet />} />
           <Route path="/investor-services" element={<Investorservicespage />} />
           {/* Add other routes as needed */}
