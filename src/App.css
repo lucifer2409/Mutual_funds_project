@@ -19,6 +19,29 @@ html {
   gap: 12px;
 }
 
+#searchboxfordownloaddocumentspage {
+  color: var(--light-typography-secondary-sz-colour-typo-secondary, var(--sz-colour-typo-secondary, #6E6E6E));
+  font-feature-settings: 'liga' off, 'clig' off;
+
+  /* Body (Regular)/Medium                                                   ($sz-typo-body-regular-medium) */
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* 142.857% */
+  letter-spacing: 0.24px;
+  flex: 1 0 0;
+}
+
+#searchicon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
 #topofmiddlesectionfortotalexpenseratio {
   display: flex;
   padding: 24px;
@@ -145,6 +168,210 @@ html {
   align-items: center;
 }
 
+.dropdownicon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+#bottomsectionformiddlesectionfordownloaddocumentspage {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.cardfordownloaddocumentspage {
+  display: flex;
+  width: 100%;
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px solid var(--SecondaryColor, #AD8E53);
+  background: var(--BG_color1, #FFF);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftsectionofcardfordownloaddocumentspage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.toptextofleftsectionofcardfordownloaddocumentspage {
+  color: var(--SecondaryColor, #AD8E53);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.bottomtextofleftsectionofcardfordownloaddocumentspage {
+  color: var(--Text_secondary, #B7B7B7);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  align-self: stretch;
+}
+
+
+.rightsectionofcardfordownloaddocumentspage {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.buttonfordownloaddocumentspage {
+  display: flex;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 24px;
+  background: var(--Color-3, #FCF5E8);
+}
+
+.buttontext {
+  color: var(--SecondaryColor, #AD8E53);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  /* 150% */
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+
+.sharebutton {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 25px;
+  background: var(--Color-3, #FCF5E8);
+}
+
+#middlesectionfordownloaddocumentspage {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 100px;
+  gap: 12px;
+}
+
+#topsectionformiddlesectionfordownloaddocumentspage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+#leftsectionoftopsectionformiddlesectionfordownloaddocumentspage {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#textforleftsectionoftopsectionformiddlesectionfordownloaddocumentspage {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#righttextforleftsectionoftopsectionformiddlesectionfordownloaddocumentspage {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#rightsectionoftopsectionformiddlesectionfordownloaddocumentspage {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#lefttextforrightsectionoftopsectionformiddlesectionfordownloaddocumentspage {
+  color: #000;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  /* 150% */
+  letter-spacing: 0.32px;
+}
+
+
+#rightdivbutton {
+  display: flex;
+  padding: 8px 12px;
+  align-items: center;
+  border-radius: 24px;
+  background: var(--Color-3, #FCF5E8);
+  color: var(--SecondaryColor, #AD8E53);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  /* 150% */
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+#rightdivbuttontext {
+  color: var(--SecondaryColor, #AD8E53);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  /* 150% */
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+#rightfilterfordownloaddocumentspage {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+  border-radius: 0px 50px 50px 0px;
+  background: var(--Grey_Color, #666);
+}
+
+#textforrightfilter {
+  color: var(--Text_secondary, #B7B7B7);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 128.571% */
+  letter-spacing: 0.32px;
+}
+
 .primaryButton {
   display: flex;
   width: 160px;
@@ -164,6 +391,56 @@ html {
   line-height: 140%;
   margin: auto;
   /* 19.6px */
+}
+
+
+#topsectionfordownloaddocumentspage {
+  display: flex;
+  width: 100%;
+  padding: 120px 100px 72px 100px;
+  flex-direction: column;
+  align-items: flex-start;
+  background: var(--Color-3, #FCF5E8);
+  gap: 48px;
+}
+
+#searchbarfordownloaddocumentspage {
+  display: flex;
+  padding: 12px 16px 12px 12px;
+  border-radius: 30px;
+  border: 1px solid var(--light-stroke-default-sz-colour-stroke-default, #E2E2E2);
+  background: var(--light-surface-background-sz-colour-surface-background, #FFF);
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+}
+
+#filterfordownloaddocumentspage {
+  display: flex;
+  width: 540px;
+  align-items: flex-start;
+  gap: 1px;
+}
+
+#leftfilterfordownloaddocumentspage {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+  border-radius: 50px 0px 0px 50px;
+  background: var(--Grey_Color, #666);
+}
+
+#textforleftfilter {
+  color: var(--Primary-Text, #FFF);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  /* 128.571% */
+  letter-spacing: 0.32px;
 }
 
 .primaryButton:hover {

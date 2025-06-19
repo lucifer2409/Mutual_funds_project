@@ -18,6 +18,7 @@ import Totalexpenseratio from './pages/Totalexpenseratio'
 import hand from './assets/hand.svg'
 import OBJECTS from './assets/OBJECTS.svg'
 import SignupForm from './SignupForm'
+import Downloaddocumentspage from './pages/Downloaddocumentspage'
 // import Form from './form'
 import Polygon1 from './assets/Polygon1.svg'
 import facebook from './assets/facebook.svg'
@@ -784,6 +785,7 @@ function App() {
           <Route path="/signup" element={<SignupForm />} />
           <Route path="/total-expense-ratio" element={<Totalexpenseratio />} />
           <Route path="/factsheet" element={<Factsheet />} />
+          <Route path="/download-documents" element={<Downloaddocumentspage />} />
           <Route path="/investor-services" element={<Investorservicespage />} />
           {/* Add other routes as needed */}
         </Routes>
