@@ -8,7 +8,9 @@ import layer1 from './assets/Layer_1.svg'
 import { ParallaxLayer } from '@react-spring/parallax'
 import Navspage from './pages/NAVSpage'
 import { Parallax } from '@react-spring/parallax'
+import Disclosurepage from './pages/Disclosurepage'
 import Polygon2 from './assets/Polygon2.svg'
+import Annualreports from './pages/Annualreports'
 import downaarrowwithcircle from './assets/downarrowwithcircle.svg'
 import React from 'react'
 import './App.css'
@@ -787,8 +789,10 @@ function App() {
           <Route path="/signup" element={<SignupForm />} />
           <Route path="/total-expense-ratio" element={<Totalexpenseratio />} />
           <Route path="/factsheet" element={<Factsheet />} />
+          <Route path='annual-reports' element={<Annualreports />} />
           <Route path="/download-documents" element={<Downloaddocumentspage />} />
           <Route path="/investor-services" element={<Investorservicespage />} />
+          <Route path="/disclosure" element={<Disclosurepage />} />
 
           {/* Add other routes as needed */}
         </Routes>

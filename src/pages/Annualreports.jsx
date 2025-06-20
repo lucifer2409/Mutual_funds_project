@@ -1,54 +1,41 @@
 import React from 'react'
-import Navbar from '../Navbar'
-import search from '../assets/search.svg'
 import dropdown from '../assets/dropdown.svg'
-import rightarrow from '../assets/rightarrow.svg'
-import logo from '../assets/Logo.svg'
+import Navbar from '../Navbar'
 import insta from '../assets/insta.svg'
 import facebook from '../assets/facebook.svg'
-import linkedin from '../assets/linkedin.svg'
 import twitter from '../assets/twitter.svg'
+import linkedin from '../assets/linkedin.svg'
 import youtube from '../assets/youtube.svg'
-
-
-const Downloaddocumentspage = () => {
+import logo from '../assets/logo.svg'
+const Annualreports = () => {
     return (
         <>
             <Navbar />
-            <div id='topsectionfordownloaddocumentspage'>
-                <div id='insidetopsection2'>
-                    <h1 id='headingoftopsection2'>Download Documents</h1>
-                    <div id='searchbarfordownloaddocumentspage'>
-                        <img src={search} alt="Search" id='searchicon' />
-                        <input type="text" id='searchboxfordownloaddocumentspage' placeholder='Search here' />
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M13.1726 12L8.92957 7.75699C8.5391 7.36652 8.5391 6.73345 8.92957 6.34299C9.32003 5.95252 9.9531 5.95252 10.3436 6.34299L15.2935 11.2929C15.684 11.6834 15.684 12.3166 15.2935 12.7071L10.3436 17.657C9.9531 18.0475 9.32003 18.0475 8.92957 17.657C8.5391 17.2665 8.5391 16.6335 8.92957 16.243L13.1726 12Z" fill="#404040" />
-                        </svg>
-                    </div>
-                    <div id='filterfordownloaddocumentspage'>
-                        <div id='leftfilterfordownloaddocumentspage'>
-                            <span id='textforleftfilter'>All Categories</span>
-                            <img src={dropdown} alt="" className='dropdownicon' />
-                        </div>
-                        <div id='rightfilterfordownloaddocumentspage'>
-                            <span id='textforrightfilter'>All Sub-Categories</span>
-                            <img src={dropdown} alt="" className='dropdownicon' />
+            <div id='topsection2'>
+                <div id='insidetopsectionofnavspage'>
+                    <div id='topofinsidetopsectionofnavspage'>
+                        <h1 id='headingoftopsection2'>Annual Report</h1>
+                        <span id='descriptionoftopsection2'>
+                            View or Download the latest and historical NAVs of any of our schemes. Simply select the Fund, Plan & Option and find the info you're looking for.
+                        </span>
+                        <div className='dropdownPrimary'>
+                            <span id='leftsidetextfordropdownprimary'>Choose Year for Annual Report</span>
+                            <img src={dropdown} alt="" id='dropdownicon' />
                         </div>
                     </div>
+
                 </div>
             </div>
             <div id='middlesectionfordownloaddocumentspage'>
-
-                
                 <div id='topsectionformiddlesectionfordownloaddocumentspage'>
                     <div id='leftsectionoftopsectionformiddlesectionfordownloaddocumentspage'>
-                        <span id='textforleftsectionoftopsectionformiddlesectionfordownloaddocumentspage'>All Categories + All Sub-categories</span>
-                        <span id='righttextforleftsectionoftopsectionformiddlesectionfordownloaddocumentspage'>(54 Forms)</span>
+                        <span id='textforleftsectionoftopsectionformiddlesectionfordownloaddocumentspage'>List of Annual Report </span>
+                        <span id='righttextforleftsectionoftopsectionformiddlesectionfordownloaddocumentspage'>(4 Forms)</span>
                     </div>
                     <div id='rightsectionoftopsectionformiddlesectionfordownloaddocumentspage'>
                         <span id='lefttextforrightsectionoftopsectionformiddlesectionfordownloaddocumentspage'>Sort By</span>
                         <div id='rightdivbutton'>
-                            <span id='rightdivbuttontext'>ALPHABETICAL</span>
+                            <span id='rightdivbuttontext'>LATEST</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M12.0008 12.172L9.17281 9.34299L7.75781 10.757L12.0008 15L16.2438 10.757L14.8288 9.34299L12.0008 12.172Z" fill="#AD8E53" />
                             </svg>
@@ -58,8 +45,8 @@ const Downloaddocumentspage = () => {
                 <div id='bottomsectionformiddlesectionfordownloaddocumentspage'>
                     <div className='cardfordownloaddocumentspage'>
                         <div className='leftsectionofcardfordownloaddocumentspage'>
-                            <span className='toptextofleftsectionofcardfordownloaddocumentspage'>AMFI Distributor Details Updation Form</span>
-                            <span className='bottomtextofleftsectionofcardfordownloaddocumentspage'>Forms/Service Forms & Distributed</span>
+                            <span className='toptextofleftsectionofcardfordownloaddocumentspage'>Annual Report 2022-2023</span>
+                            <span className='bottomtextofleftsectionofcardfordownloaddocumentspage'>Information Documents / Factsheets / 15th May 2025</span>
                         </div>
                         <div className='rightsectionofcardfordownloaddocumentspage'>
                             <div className='buttonfordownloaddocumentspage'>
@@ -83,8 +70,8 @@ const Downloaddocumentspage = () => {
                     </div>
                     <div className='cardfordownloaddocumentspage'>
                         <div className='leftsectionofcardfordownloaddocumentspage'>
-                            <span className='toptextofleftsectionofcardfordownloaddocumentspage'>AMFI Distributor Details Updation Form</span>
-                            <span className='bottomtextofleftsectionofcardfordownloaddocumentspage'>Forms/Service Forms & Distributed</span>
+                            <span className='toptextofleftsectionofcardfordownloaddocumentspage'>Annual Report 2022-2023</span>
+                            <span className='bottomtextofleftsectionofcardfordownloaddocumentspage'>Information Documents / Factsheets / 15th May 2025</span>
                         </div>
                         <div className='rightsectionofcardfordownloaddocumentspage'>
                             <div className='buttonfordownloaddocumentspage'>
@@ -108,8 +95,8 @@ const Downloaddocumentspage = () => {
                     </div>
                     <div className='cardfordownloaddocumentspage'>
                         <div className='leftsectionofcardfordownloaddocumentspage'>
-                            <span className='toptextofleftsectionofcardfordownloaddocumentspage'>AMFI Distributor Details Updation Form</span>
-                            <span className='bottomtextofleftsectionofcardfordownloaddocumentspage'>Forms/Service Forms & Distributed</span>
+                            <span className='toptextofleftsectionofcardfordownloaddocumentspage'>Annual Report 2022-2023</span>
+                            <span className='bottomtextofleftsectionofcardfordownloaddocumentspage'>Information Documents / Factsheets / 15th May 2025</span>
                         </div>
                         <div className='rightsectionofcardfordownloaddocumentspage'>
                             <div className='buttonfordownloaddocumentspage'>
@@ -133,8 +120,8 @@ const Downloaddocumentspage = () => {
                     </div>
                     <div className='cardfordownloaddocumentspage'>
                         <div className='leftsectionofcardfordownloaddocumentspage'>
-                            <span className='toptextofleftsectionofcardfordownloaddocumentspage'>AMFI Distributor Details Updation Form</span>
-                            <span className='bottomtextofleftsectionofcardfordownloaddocumentspage'>Forms/Service Forms & Distributed</span>
+                            <span className='toptextofleftsectionofcardfordownloaddocumentspage'>Annual Report 2022-2023</span>
+                            <span className='bottomtextofleftsectionofcardfordownloaddocumentspage'>Information Documents / Factsheets / 15th May 2025</span>
                         </div>
                         <div className='rightsectionofcardfordownloaddocumentspage'>
                             <div className='buttonfordownloaddocumentspage'>
@@ -158,8 +145,8 @@ const Downloaddocumentspage = () => {
                     </div>
                     <div className='cardfordownloaddocumentspage'>
                         <div className='leftsectionofcardfordownloaddocumentspage'>
-                            <span className='toptextofleftsectionofcardfordownloaddocumentspage'>AMFI Distributor Details Updation Form</span>
-                            <span className='bottomtextofleftsectionofcardfordownloaddocumentspage'>Forms/Service Forms & Distributed</span>
+                            <span className='toptextofleftsectionofcardfordownloaddocumentspage'>Annual Report 2022-2023</span>
+                            <span className='bottomtextofleftsectionofcardfordownloaddocumentspage'>Information Documents / Factsheets / 15th May 2025</span>
                         </div>
                         <div className='rightsectionofcardfordownloaddocumentspage'>
                             <div className='buttonfordownloaddocumentspage'>
@@ -183,8 +170,8 @@ const Downloaddocumentspage = () => {
                     </div>
                     <div className='cardfordownloaddocumentspage'>
                         <div className='leftsectionofcardfordownloaddocumentspage'>
-                            <span className='toptextofleftsectionofcardfordownloaddocumentspage'>AMFI Distributor Details Updation Form</span>
-                            <span className='bottomtextofleftsectionofcardfordownloaddocumentspage'>Forms/Service Forms & Distributed</span>
+                            <span className='toptextofleftsectionofcardfordownloaddocumentspage'>Annual Report 2022-2023</span>
+                            <span className='bottomtextofleftsectionofcardfordownloaddocumentspage'>Information Documents / Factsheets / 15th May 2025</span>
                         </div>
                         <div className='rightsectionofcardfordownloaddocumentspage'>
                             <div className='buttonfordownloaddocumentspage'>
@@ -208,8 +195,8 @@ const Downloaddocumentspage = () => {
                     </div>
                     <div className='cardfordownloaddocumentspage'>
                         <div className='leftsectionofcardfordownloaddocumentspage'>
-                            <span className='toptextofleftsectionofcardfordownloaddocumentspage'>AMFI Distributor Details Updation Form</span>
-                            <span className='bottomtextofleftsectionofcardfordownloaddocumentspage'>Forms/Service Forms & Distributed</span>
+                            <span className='toptextofleftsectionofcardfordownloaddocumentspage'>Annual Report 2022-2023</span>
+                            <span className='bottomtextofleftsectionofcardfordownloaddocumentspage'>Information Documents / Factsheets / 15th May 2025</span>
                         </div>
                         <div className='rightsectionofcardfordownloaddocumentspage'>
                             <div className='buttonfordownloaddocumentspage'>
@@ -233,8 +220,8 @@ const Downloaddocumentspage = () => {
                     </div>
                     <div className='cardfordownloaddocumentspage'>
                         <div className='leftsectionofcardfordownloaddocumentspage'>
-                            <span className='toptextofleftsectionofcardfordownloaddocumentspage'>AMFI Distributor Details Updation Form</span>
-                            <span className='bottomtextofleftsectionofcardfordownloaddocumentspage'>Forms/Service Forms & Distributed</span>
+                            <span className='toptextofleftsectionofcardfordownloaddocumentspage'>Annual Report 2022-2023</span>
+                            <span className='bottomtextofleftsectionofcardfordownloaddocumentspage'>Information Documents / Factsheets / 15th May 2025</span>
                         </div>
                         <div className='rightsectionofcardfordownloaddocumentspage'>
                             <div className='buttonfordownloaddocumentspage'>
@@ -257,12 +244,10 @@ const Downloaddocumentspage = () => {
                         </div>
                     </div>
                 </div>
+                <button className='primaryButton'>
+                    View more
+                </button>
             </div>
-            <button className='primaryButton'>
-                View more
-            </button>
-
-
             <div id='mainframe8'>
                 <div id='insideframeofmainframe8'>
                     <img src={logo} alt="" />
@@ -325,4 +310,4 @@ const Downloaddocumentspage = () => {
     )
 }
 
-export default Downloaddocumentspage
+export default Annualreports
