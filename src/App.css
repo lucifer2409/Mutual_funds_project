@@ -73,6 +73,10 @@ html {
   align-items: center;
 }
 
+.calendardiv:hover {
+  cursor: pointer;
+}
+
 #viewtirbutton {
   display: flex;
   padding: 12px 24px;
@@ -87,6 +91,10 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+#viewtirbutton:hover {
+  cursor: pointer;
 }
 
 .calendardivtext {
@@ -105,12 +113,33 @@ html {
   flex-shrink: 0;
 }
 
+.downloadicon:hover {
+  cursor: pointer;
+}
+
 #middlesectionfortotalexpenseratio {
   display: flex;
   width: 100%;
+  gap: 48px;
   padding: 24px 100px;
   flex-direction: column;
   align-items: flex-start;
+
+}
+
+#insideofmiddlesectionfornavs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+#middlesectionfornavs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  align-self: stretch;
 }
 
 #descriptionoftopsection2 {
@@ -176,6 +205,26 @@ html {
   align-items: center;
 }
 
+
+#leftsidetextfordropdownprimary {
+  color: var(--Primary-Text, #FFF);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 128.571% */
+  letter-spacing: 0.32px;
+}
+
+#dropdownicon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
 #bottomsectionformiddlesectionfordownloaddocumentspage {
   display: flex;
   width: 100%;
@@ -189,12 +238,151 @@ html {
   width: 100%;
   padding: 24px;
   border-radius: 24px;
-  border: 1px solid var(--SecondaryColor, #AD8E53);
+  border: 1px solid var(--Text_secondary, #B7B7B7);
   background: var(--BG_color1, #FFF);
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10);
   justify-content: space-between;
   align-items: center;
 }
+
+
+#insidetopsectionofnavspage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+#topofinsidetopsectionofnavspage {
+  display: flex;
+  width: 606px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+
+.dropdownPrimary {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: space-between;
+  display: flex;
+  width: 420px;
+  align-items: flex-start;
+  gap: 1px;
+  align-items: center;
+  flex: 1 0 0;
+  border-radius: 50px;
+  background: var(--Grey_Color, #666);
+}
+.dropdownPrimary:hover {
+  cursor: pointer;
+}
+
+#leftsideofthetopofmiddlesectionfortotalexpratio {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.primaryButtonformiddlesectionfortotalexpenseratio {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 24px;
+  border: 1px solid var(--Line, #E2E2E2);
+  color: var(--Grey_Color, #666);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.25px;
+}
+
+.primaryButtonformiddlesectionfortotalexpenseratio:hover {
+  cursor: pointer;
+  background-color: #E2E2E2;
+}
+
+.secondaryButtonformiddlesectionfortotalexpenseratio:hover {
+  cursor: pointer;
+  /* background-color: #E2E2E2; */
+}
+
+.secondaryButtonformiddlesectionfortotalexpenseratio {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 24px;
+  background: var(--SecondaryColor, #AD8E53);
+  color: var(--Primary-Text, #FFF);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.25px;
+}
+
+.rightsideofthetopofmiddlesectionfortotalexpratio {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#textforright2sideoftop2ofmiddlesectionfortotalexpenseratio {
+  color: #000;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  /* 150% */
+  letter-spacing: 0.32px;
+}
+
+#leftsideofthebotttomofmiddlesectionfortotalexpenseratio {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+#bottomofthisdiv {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+#topofthisdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+#topofmiddlesectionfortotalexpratio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  align-self: stretch;
+}
+
+.cardfordownloaddocumentspage:hover {
+  border-radius: 24px;
+  cursor: pointer;
+  border: 1px solid var(--SecondaryColor, #AD8E53);
+}
+
+
 
 .leftsectionofcardfordownloaddocumentspage {
   display: flex;

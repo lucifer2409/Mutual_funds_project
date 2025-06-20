@@ -6,6 +6,7 @@ import arrowrightline from './assets/arrowrightline.svg'
 import arrowleftline from './assets/arrowleftline.svg'
 import layer1 from './assets/Layer_1.svg'
 import { ParallaxLayer } from '@react-spring/parallax'
+import Navspage from './pages/NAVSpage'
 import { Parallax } from '@react-spring/parallax'
 import Polygon2 from './assets/Polygon2.svg'
 import downaarrowwithcircle from './assets/downarrowwithcircle.svg'
@@ -781,12 +782,14 @@ function App() {
           <Route path="/" element={<MainContent />} />
           <Route path="/leadership" element={<Leadership />} />
           <Route path="/equity-funds" element={<EquityFunds />} />
+          <Route path='/navs-page' element={<Navspage />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/signup" element={<SignupForm />} />
           <Route path="/total-expense-ratio" element={<Totalexpenseratio />} />
           <Route path="/factsheet" element={<Factsheet />} />
           <Route path="/download-documents" element={<Downloaddocumentspage />} />
           <Route path="/investor-services" element={<Investorservicespage />} />
+
           {/* Add other routes as needed */}
         </Routes>
       </GSAPProvider>
