@@ -96,7 +96,7 @@ html {
   cursor: pointer;
 }
 
-#textforcardfordisclosuresection {
+.textforcardfordisclosuresection {
   color: #000;
   font-family: Poppins;
   font-size: 16px;
@@ -104,6 +104,25 @@ html {
   font-weight: 500;
   line-height: normal;
 }
+
+.textforcardfordisclosuresection.none {
+  color: var(--SecondaryColor, #AD8E53);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.textforcardfordisclosuresection:not(.none) {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 
 .hoveredcardfordisclosuresection {
   display: flex;
@@ -170,7 +189,7 @@ html {
   padding: 24px 48px;
 }
 
-#topdivforhoveredcardfordisclosuresection {
+.topdivforhoveredcardfordisclosuresection {
   padding: 24px 48px;
   border-bottom: 1px solid var(--Line, #E2E2E2);
   display: flex;
@@ -182,6 +201,7 @@ html {
 .cardfordisclosuresection-container.expanded .hoveredcardfordisclosuresection {
   height: auto;
 }
+
 .dropdownblack {
   transition: transform 0.3s ease;
 }
@@ -201,11 +221,25 @@ html {
 }
 
 
-#topdivforhoveredcardfordisclosuresection {
+.topdivforhoveredcardfordisclosuresection {
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
+}
+
+.topdivforhoveredcardfordisclosuresection.none {
+  color: var(--SecondaryColor, #AD8E53);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: none;
+}
+
+.topdivforhoveredcardfordisclosuresection:not(.none) {
+  display: flex;
 }
 
 #bottomdivforhoveredcardfordisclosuresection {
