@@ -9,7 +9,7 @@ import dropdown from '../assets/dropdown.svg'
 import twitter from '../assets/twitter.svg'
 import linkedin from '../assets/linkedin.svg'
 import insta from '../assets/insta.svg'
-import logo from '../assets/Logo.svg'
+import logo from '../assets/Logo.svg' 
 import youtube from '../assets/youtube.svg'
 
 

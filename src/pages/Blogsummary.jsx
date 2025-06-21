@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar'
-import logo from '../assets/Logo.svg'
+import logo from '../assets/Logo.svg' 
 import facebook from '../assets/facebook.svg'
 import twitter from '../assets/twitter.svg'
 import linkedin from '../assets/linkedin.svg'

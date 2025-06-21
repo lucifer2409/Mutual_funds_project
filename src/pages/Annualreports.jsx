@@ -6,7 +6,7 @@ import facebook from '../assets/facebook.svg'
 import twitter from '../assets/twitter.svg'
 import linkedin from '../assets/linkedin.svg'
 import youtube from '../assets/youtube.svg'
-import logo from '../assets/logo.svg'
+import logo from '../assets/Logo.svg' 
 import { Link } from 'react-router-dom'
 const Annualreports = () => {
     return (

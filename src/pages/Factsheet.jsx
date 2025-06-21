@@ -1,7 +1,7 @@
 import React from 'react'
 import dropdown from '../assets/dropdown.svg'
 import Navbar from '../Navbar'
-import logo from '../assets/Logo.svg'  // Updated to match the correct case
+import logo from '../assets/Logo.svg'   // Updated to match the correct case
 import { Link } from 'react-router-dom'
 import facebook from '../assets/facebook.svg'
 import insta from '../assets/insta.svg'

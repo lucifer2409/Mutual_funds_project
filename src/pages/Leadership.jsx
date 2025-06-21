@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 import '../styles/Leadership.css';
 import mapImage from '../assets/map.svg'; // You'll need to add this image
-import logo from '../assets/Logo.svg';
+import logo from '../assets/Logo.svg' ;
 import timer from '../assets/timer.svg'; // Add timer icon image
 import leaderImage1 from '../assets/avatar.svg'; // Add placeholder leader images
 import leaderImage2 from '../assets/avatar.svg'; // Add placeholder leader images
