@@ -260,7 +260,7 @@ function MainContent() {
                   Once we invest, we keep track—not just of performance, but of progress. We believe accountability creates outcomes.
                 </span>
               </div>
-              <img src={downaarrowwithcircle} alt="" className='w-[32px] h-[32px]'/>
+              <img src={downaarrowwithcircle} alt="" className='w-[32px] h-[32px]' />
             </div>
             <div className='rightsideofparallaxContainer1'>
               <img src={iceberg} alt="" />
@@ -757,7 +757,6 @@ function MainContent() {
                 QUICK LINK
               </span>
               <div className='linksofinsidecontentinsideframeofmainframe8'>
-
                 <div className='linkseparator'>
                   <span className='linktitle2'>Our Funds</span>
                   <span className='goldenlink'>Coming soon...</span>
@@ -768,6 +767,8 @@ function MainContent() {
                 </div>
               </div>
             </div>
+
+
             <div id='insidecontentinsideframeofmainframe8'>
               <span id='titleofinsidecontentinsideframeofmainframe8'>
                 Other Links
@@ -784,6 +785,17 @@ function MainContent() {
                 <Link className='linktitle2' to='/disclosure'>Disclosure</Link>
 
 
+              </div>
+            </div>
+            <div id='insidecontentinsideframeofmainframe8'>
+              <span id='titleofinsidecontentinsideframeofmainframe8'>
+                SEBI
+              </span>
+              <div className='linksofinsidecontentinsideframeofmainframe8'>
+                <Link className='linktitle2' to='/'>SEBI Smart ODR</Link>
+                <Link className='linktitle2' to='/'>SEBI Scores</Link>
+                <Link className='linktitle2' to='/'>SEBI Scores App (iOS)</Link>
+                <Link className='linktitle2' to='/'>SEBI Scores App (Andriod)</Link>
               </div>
             </div>
             <div id='divforconnect'>

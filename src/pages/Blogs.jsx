@@ -3,7 +3,7 @@ import Navbar from '../Navbar'
 import confusedman from '../assets/confusedman.png'
 import search from '../assets/search.svg'
 import shareicon from '../assets/shareicon.svg'
-import logo from '../assets/Logo.svg' 
+import logo from '../assets/Logo.svg'
 import facebook from '../assets/facebook.svg'
 import twitter from '../assets/twitter.svg'
 import { Link } from 'react-router-dom'
@@ -360,7 +360,7 @@ const Blogs = () => {
                 View more
             </button>
 
-            <div id='mainframe8' style={{marginTop: '280px'}}>
+            <div id='mainframe8' style={{ marginTop: '280px' }}>
                 <div id='insideframeofmainframe8'>
                     <img src={logo} alt="" />
                     <div id='contentinsideframeofmainframe8'>
@@ -369,7 +369,7 @@ const Blogs = () => {
                                 QUICK LINK
                             </span>
                             <div className='linksofinsidecontentinsideframeofmainframe8'>
-                                
+
                                 <div className='linkseparator'>
                                     <span className='linktitle2'>Our Funds</span>
                                     <span className='goldenlink'>Coming soon...</span>
@@ -396,6 +396,17 @@ const Blogs = () => {
                                 <Link className='linktitle2' to='/disclosure'>Disclosure</Link>
 
 
+                            </div>
+                        </div>
+                        <div id='insidecontentinsideframeofmainframe8'>
+                            <span id='titleofinsidecontentinsideframeofmainframe8'>
+                                SEBI
+                            </span>
+                            <div className='linksofinsidecontentinsideframeofmainframe8'>
+                                <Link className='linktitle2' to='/'>SEBI Smart ODR</Link>
+                                <Link className='linktitle2' to='/'>SEBI Scores</Link>
+                                <Link className='linktitle2' to='/'>SEBI Scores App (iOS)</Link>
+                                <Link className='linktitle2' to='/'>SEBI Scores App (Andriod)</Link>
                             </div>
                         </div>
                         <div id='divforconnect'>

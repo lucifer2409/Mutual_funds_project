@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar'
-import logo from '../assets/Logo.svg' 
+import logo from '../assets/Logo.svg'
 import facebook from '../assets/facebook.svg'
 import twitter from '../assets/twitter.svg'
 import linkedin from '../assets/linkedin.svg'
@@ -225,7 +225,7 @@ const Blogsummary = () => {
                                 QUICK LINK
                             </span>
                             <div className='linksofinsidecontentinsideframeofmainframe8'>
-                                
+
                                 <div className='linkseparator'>
                                     <span className='linktitle2'>Our Funds</span>
                                     <span className='goldenlink'>Coming soon...</span>
@@ -246,6 +246,17 @@ const Blogsummary = () => {
                                 <span className='linktitle2'>SEBU Scores App (ios)</span>
                                 <span className='linktitle2'>SEBU Scores App (Android)</span>
 
+                            </div>
+                        </div>
+                        <div id='insidecontentinsideframeofmainframe8'>
+                            <span id='titleofinsidecontentinsideframeofmainframe8'>
+                                SEBI
+                            </span>
+                            <div className='linksofinsidecontentinsideframeofmainframe8'>
+                                <Link className='linktitle2' to='/'>SEBI Smart ODR</Link>
+                                <Link className='linktitle2' to='/'>SEBI Scores</Link>
+                                <Link className='linktitle2' to='/'>SEBI Scores App (iOS)</Link>
+                                <Link className='linktitle2' to='/'>SEBI Scores App (Andriod)</Link>
                             </div>
                         </div>
                         <div id='divforconnect'>

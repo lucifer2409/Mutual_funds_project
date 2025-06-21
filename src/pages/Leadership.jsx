@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 import '../styles/Leadership.css';
 import mapImage from '../assets/map.svg'; // You'll need to add this image
-import logo from '../assets/Logo.svg' ;
+import logo from '../assets/Logo.svg';
 import timer from '../assets/timer.svg'; // Add timer icon image
 import leaderImage1 from '../assets/avatar.svg'; // Add placeholder leader images
 import leaderImage2 from '../assets/avatar.svg'; // Add placeholder leader images
@@ -538,7 +538,7 @@ const Leadership = () => {
                 QUICK LINK
               </span>
               <div className='linksofinsidecontentinsideframeofmainframe8'>
-                
+
                 <div className='linkseparator'>
                   <span className='linktitle2'>Our Funds</span>
                   <span className='goldenlink'>Coming soon...</span>
@@ -549,6 +549,7 @@ const Leadership = () => {
                 </div>
               </div>
             </div>
+
             <div id='insidecontentinsideframeofmainframe8'>
               <span id='titleofinsidecontentinsideframeofmainframe8'>
                 Other Links
@@ -565,6 +566,17 @@ const Leadership = () => {
                 <Link className='linktitle2' to='/disclosure'>Disclosure</Link>
 
 
+              </div>
+            </div>
+            <div id='insidecontentinsideframeofmainframe8'>
+              <span id='titleofinsidecontentinsideframeofmainframe8'>
+                SEBI
+              </span>
+              <div className='linksofinsidecontentinsideframeofmainframe8'>
+                <Link className='linktitle2' to='/'>SEBI Smart ODR</Link>
+                <Link className='linktitle2' to='/'>SEBI Scores</Link>
+                <Link className='linktitle2' to='/'>SEBI Scores App (iOS)</Link>
+                <Link className='linktitle2' to='/'>SEBI Scores App (Andriod)</Link>
               </div>
             </div>
             <div id='divforconnect'>
