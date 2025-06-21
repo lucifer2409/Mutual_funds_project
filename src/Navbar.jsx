@@ -14,7 +14,11 @@ import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isfunddropdownOpen, setIsfunddropdownOpen] = useState(false);
+    const [istoolsdropdownOpen, setIstoolsdropdownOpen] = useState(false);
+    const [isopenforourfunds, setIsopenforourfunds] = useState(false);
     const navigate = useNavigate();
+
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
@@ -190,28 +194,158 @@ const Navbar = () => {
 
             {isOpen && (
                 <div
-                    id="mobile-menu"
-                    className="absolute top-16 bg-white p-4 rounded-lg shadow-lg flex flex-col gap-4 z-40 w-full"
-                >
-                    <Link
-                        to="/leadership"
-                        className="text-blue-400 text-md"
-                    >
-                        Leadership
-                    </Link>
-                    <Link
-                        to="/equity-funds"
-                        className="text-black-400 text-md"
-                    >
-                        Our Funds
-                    </Link>
-                    <Link
-                        to="/"
-                        className="text-blue-400 text-md"
-                    >
-                        Tools & Resources
-                    </Link>
-                </div>
+                    id="mobile-menu">
+                    <div className='mobilemenusections'>
+                        <span>About us</span>
+                        <img src={dropdown} alt="" className='dropdownimageformobilemenu' />
+                    </div>
+
+
+                    {
+                        isopenforourfunds ? (
+
+                            <div id='openedmobilemenusectionforourfunds' onClick={() => setIsopenforourfunds(!isopenforourfunds)}>
+                                <div id='topsectionofopenedmobilemenusectionforourfunds'>
+                                    <div id='insidetopsectionofopenedmobilemenusectionforourfunds'>
+                                        <span className='headerforopenedsection'>Our funds</span>
+                                        <img src={dropdown} alt="" className='dropdownimageformobilemenu' />
+                                    </div>
+                                </div>
+                                <div id='bottomsectionofopenedmobilemenusectionforourfunds'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="296" height="2" viewBox="0 0 296 2" fill="none">
+                                        <path d="M0 1H296" stroke="#E2E2E2" />
+                                    </svg>
+                                    <div className='smallmobilemenusectionsforourfunds'>
+                                        <img src={calculatorIcon} alt="" className='calculatoricon' />
+                                        <span className='textforsmallmobilesections'>Equity funds</span>
+                                    </div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="296" height="2" viewBox="0 0 296 2" fill="none">
+                                        <path d="M0 1H296" stroke="#E2E2E2" />
+                                    </svg>
+                                    <div className='smallmobilemenusectionsforourfunds'>
+                                        <img src={calculatorIcon} alt="" className='calculatoricon' />
+                                        <span className='textforsmallmobilesections'>Debt funds</span>
+                                    </div>
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="296" height="2" viewBox="0 0 296 2" fill="none">
+                                        <path d="M0 1H296" stroke="#E2E2E2" />
+                                    </svg>
+                                    <div className='smallmobilemenusectionsforourfunds'>
+                                        <img src={calculatorIcon} alt="" className='calculatoricon' />
+                                        <span className='textforsmallmobilesections'>Hybrid funds</span>
+                                    </div>
+
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="296" height="2" viewBox="0 0 296 2" fill="none">
+                                        <path d="M0 1H296" stroke="#E2E2E2" />
+                                    </svg>
+                                    <div className='smallmobilemenusectionsforourfunds'>
+                                        <img src={calculatorIcon} alt="" className='calculatoricon' />
+                                        <span className='textforsmallmobilesections'>Tax Saver Fund (ELSS)</span>
+                                    </div>
+
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="296" height="2" viewBox="0 0 296 2" fill="none">
+                                        <path d="M0 1H296" stroke="#E2E2E2" />
+                                    </svg>
+                                    <div className='smallmobilemenusectionsforourfunds'>
+                                        <img src={calculatorIcon} alt="" className='calculatoricon' />
+                                        <span className='textforsmallmobilesections'>International Funds</span>
+                                    </div>
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="296" height="2" viewBox="0 0 296 2" fill="none">
+                                        <path d="M0 1H296" stroke="#E2E2E2" />
+                                    </svg>
+                                    <div className='smallmobilemenusectionsforourfunds'>
+                                        <img src={calculatorIcon} alt="" className='calculatoricon' />
+                                        <span className='textforsmallmobilesections'>Index Funds</span>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="296" height="2" viewBox="0 0 296 2" fill="none">
+                                        <path d="M0 1H296" stroke="#E2E2E2" />
+                                    </svg>
+                                    <div id='lastsmallmobilemenusectionsforourfunds'>
+                                        <span id='headingforlastmobilesection'>
+                                            Related Links
+                                        </span>
+                                        <div id='bottomdivforlastmobilemenusection'>
+                                            <div className='insidebottomdivforsmallmobilemenusectionsforourfunds'>
+                                                <img src={calculatorIcon} alt="" className='iconsset1' />
+                                                <span className='textinsidenav1rightside'>Presentation</span>
+                                            </div>
+                                            <div className='insidebottomdivforsmallmobilemenusectionsforourfunds'>
+                                                <img src={calculatorIcon} alt="" className='iconsset1' />
+                                                <span className='textinsidenav1rightside'>Brochure</span>
+                                            </div>
+                                            <div className='insidebottomdivforsmallmobilemenusectionsforourfunds'>
+                                                <img src={calculatorIcon} alt="" className='iconsset1' />
+                                                <span className='textinsidenav1rightside'>NAV History</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        ) : (
+                            <div className='mobilemenusections' onClick={() => setIsopenforourfunds(!isopenforourfunds)}>
+                                <span>Our funds</span>
+                                <img src={dropdown} alt="" className='dropdownimageformobilemenu' />
+                            </div>
+                        )
+                    }
+
+                    {
+                        istoolsdropdownOpen ? (
+                            <div id='openedmobilemenusectionfortools' onClick={() => setIstoolsdropdownOpen(!istoolsdropdownOpen)}>
+                                <div id='topsectionofopenedmobilemenusectionfortools'>
+                                    <span className='headerforopenedsection'>Tools</span>
+                                    <img src={dropdown} alt="" className='dropdownimageformobilemenu' />
+                                </div>
+                                <div id='bottomsectionofopenedmobilemenusectionfortools'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="296" height="2" viewBox="0 0 296 2" fill="none">
+                                        <path d="M0 1H296" stroke="#E2E2E2" />
+                                    </svg>
+                                    <div className='smallmobilemenusectionsfortools'>
+                                        <img src={calculatorIcon} alt="" className='calculatoricon' />
+                                        <span className='textforsmallmobilesections'>Blogs</span>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="296" height="2" viewBox="0 0 296 2" fill="none">
+                                        <path d="M0 1H296" stroke="#E2E2E2" />
+                                    </svg>
+                                    <div className='smallmobilemenusectionsfortools'>
+                                        <img src={calculatorIcon} alt="" className='calculatoricon' />
+                                        <span className='textforsmallmobilesections'>Downloads</span>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="296" height="2" viewBox="0 0 296 2" fill="none">
+                                        <path d="M0 1H296" stroke="#E2E2E2" />
+                                    </svg>
+                                    <div className='smallmobilemenusectionsfortools'>
+                                        <img src={calculatorIcon} alt="" className='calculatoricon' />
+                                        <span className='textforsmallmobilesections'>Calculators</span>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="296" height="2" viewBox="0 0 296 2" fill="none">
+                                        <path d="M0 1H296" stroke="#E2E2E2" />
+                                    </svg>
+                                    <div className='smallmobilemenusectionsfortools'>
+                                        <img src={calculatorIcon} alt="" className='calculatoricon' />
+                                        <span className='textforsmallmobilesections'>Investor Corner</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        ) : (
+                            <div className='mobilemenusections' onClick={() => setIstoolsdropdownOpen(!istoolsdropdownOpen)}>
+                                <span>Tools</span>
+                                <img src={dropdown} alt="" className='dropdownimageformobilemenu' />
+                            </div >
+                        )
+                    }
+
+                </div >
             )}
         </>
     )

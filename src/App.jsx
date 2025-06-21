@@ -4,6 +4,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import arrowrightline from './assets/arrowrightline.svg'
 import arrowleftline from './assets/arrowleftline.svg'
+import iceberg from './assets/iceberg.svg'
+import animation from "./assets/animation.json";
 import Blogs from './pages/Blogs'
 import Blogsummary from './pages/Blogsummary'
 import layer1 from './assets/Layer_1.svg'
@@ -123,9 +125,6 @@ function MainContent() {
   return (
     <>
       <Navbar />
-
-
-
       <div id='mainframe1' ref={heroRef}>
         <div id='leftframe'>
           <div id='insideleftframe1'>
@@ -234,6 +233,40 @@ function MainContent() {
             <img src={hand} alt="" />
           </div>
         </div>
+        <div className='insideparallaxContainer2'>
+          <div id='insideofinsideparallaxContainer2'>
+            <div id='leftsideofinsideparallaxContainer2'>
+              <span id='headingofinsideparallaxContainer2'>
+                Investment Philosophy
+              </span>
+              <h2 id='contentinsideofinsideparallaxContainer2'>
+                We're building the fund we wish existed.
+              </h2>
+              <div id='contentinsideofinsideparallaxContainer2div'>
+                <span className='headingofcontentinsideofinsideparallaxContainer2div'>
+                  Before Investing: we question, challenge, and verify.
+                </span>
+                <br />
+                <span className='othercontentinsideofinsideparallaxContainer2div'>
+                  It’s not enough for a company to look good on paper. We examine the business model, capital efficiency, leadership mindset, and long-term viability.
+                </span>
+              </div>
+              <div id='contentinsideofinsideparallaxContainer2div'>
+                <span className='headingofcontentinsideofinsideparallaxContainer2div'>
+                  After: we stay informed and involved.
+                </span>
+                <br />
+                <span className='othercontentinsideofinsideparallaxContainer2div'>
+                  Once we invest, we keep track—not just of performance, but of progress. We believe accountability creates outcomes.
+                </span>
+              </div>
+              <img src={downaarrowwithcircle} alt="" className='w-[32px] h-[32px]'/>
+            </div>
+            <div className='rightsideofparallaxContainer1'>
+              <img src={iceberg} alt="" />
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id='mainframe3'>
@@ -267,7 +300,7 @@ function MainContent() {
           <div id='middleframeofmiddleframe1'>
             <div className='cardsofmiddleframe1'>
               <div className='topframeofcard'>
-                <span id='textinsidetopframe'>Coming soon...</span>
+                <span id='textinsidetopframe'>The power of stable, trusted companies</span>
               </div>
               <div className='bottomframeofcard'>
                 <div className='insidebottomframeofcard1'>
@@ -309,7 +342,7 @@ function MainContent() {
             </div>
             <div className='cardsofmiddleframe1'>
               <div className='topframeofcard'>
-                <span id='textinsidetopframe'>Coming soon...</span>
+                <span id='textinsidetopframe'>The power of stable, trusted companies</span>
               </div>
               <div className='bottomframeofcard'>
                 <div className='insidebottomframeofcard1'>
@@ -351,7 +384,7 @@ function MainContent() {
             </div>
             <div className='cardsofmiddleframe1'>
               <div className='topframeofcard'>
-                <span id='textinsidetopframe'>Coming soon...</span>
+                <span id='textinsidetopframe'>The power of stable, trusted companies</span>
               </div>
               <div className='bottomframeofcard'>
                 <div className='insidebottomframeofcard1'>
@@ -724,7 +757,7 @@ function MainContent() {
                 QUICK LINK
               </span>
               <div className='linksofinsidecontentinsideframeofmainframe8'>
-                
+
                 <div className='linkseparator'>
                   <span className='linktitle2'>Our Funds</span>
                   <span className='goldenlink'>Coming soon...</span>
