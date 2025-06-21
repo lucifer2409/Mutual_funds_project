@@ -4,6 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import arrowrightline from './assets/arrowrightline.svg'
 import arrowleftline from './assets/arrowleftline.svg'
+import Blogs from './pages/Blogs'
 import layer1 from './assets/Layer_1.svg'
 import { ParallaxLayer } from '@react-spring/parallax'
 import Navspage from './pages/NAVSpage'
@@ -793,7 +794,7 @@ function App() {
           <Route path="/download-documents" element={<Downloaddocumentspage />} />
           <Route path="/investor-services" element={<Investorservicespage />} />
           <Route path="/disclosure" element={<Disclosurepage />} />
-
+          <Route path='/blogs' element={<Blogs />} />
           {/* Add other routes as needed */}
         </Routes>
       </GSAPProvider>
