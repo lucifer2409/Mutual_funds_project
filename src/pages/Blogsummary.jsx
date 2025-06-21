@@ -225,7 +225,7 @@ const Blogsummary = () => {
                                 QUICK LINK
                             </span>
                             <div className='linksofinsidecontentinsideframeofmainframe8'>
-                                <span className='linktitle2'>About Us</span>
+                                
                                 <div className='linkseparator'>
                                     <span className='linktitle2'>Our Funds</span>
                                     <span className='goldenlink'>Coming soon...</span>

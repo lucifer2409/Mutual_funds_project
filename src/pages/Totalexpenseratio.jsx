@@ -9,6 +9,7 @@ import linkedin from '../assets/linkedin.svg'
 import insta from '../assets/insta.svg'
 import logo from '../assets/Logo.svg'
 import youtube from '../assets/youtube.svg'
+import { Link } from 'react-router-dom'
 
 
 const Totalexpenseratio = () => {
@@ -202,63 +203,69 @@ const Totalexpenseratio = () => {
             </button>
 
             <div id='mainframe8'>
-                <div id='insideframeofmainframe8'>
-                    <img src={logo} alt="" />
-                    <div id='contentinsideframeofmainframe8'>
-                        <div id='insidecontentinsideframeofmainframe8'>
-                            <span id='titleofinsidecontentinsideframeofmainframe8'>
-                                QUICK LINK
-                            </span>
-                            <div className='linksofinsidecontentinsideframeofmainframe8'>
-                                <span className='linktitle2'>About Us</span>
-                                <div className='linkseparator'>
-                                    <span className='linktitle2'>Our Funds</span>
-                                    <span className='goldenlink'>Coming soon...</span>
-                                </div>
-                                <div className='linkseparator'>
-                                    <span className='linktitle2'>Tools & Resources</span>
-                                    <span className='goldenlink'>Coming soon...</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div id='insidecontentinsideframeofmainframe8'>
-                            <span id='titleofinsidecontentinsideframeofmainframe8'>
-                                SEBI
-                            </span>
-                            <div className='linksofinsidecontentinsideframeofmainframe8'>
-                                <span className='linktitle2'>SEBU Smart ODR</span>
-                                <span className='linktitle2'>SEBI Scores</span>
-                                <span className='linktitle2'>SEBU Scores App (ios)</span>
-                                <span className='linktitle2'>SEBU Scores App (Android)</span>
-
-                            </div>
-                        </div>
-                        <div id='divforconnect'>
-                            <span id='titleofdivforconnect'>CONNECT WITH US</span>
-                            <div id='divinsideconnect'>
-                                <div className='socialmediaicondiv'>
-                                    <img src={facebook} alt="" className='socialmediaicon' />
-                                </div>
-                                <div className='socialmediaicondiv'>
-                                    <img src={twitter} alt="" className='socialmediaicon' />
-                                </div>
-                                <div className='socialmediaicondiv'>
-                                    <img src={linkedin} alt="" className='socialmediaicon' />
-                                </div>
-                                <div className='socialmediaicondiv'>
-                                    <img src={insta} alt="" className='socialmediaicon' />
-                                </div>
-                                <div className='socialmediaicondiv'>
-                                    <img src={youtube} alt="" className='socialmediaicon' />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div id='insideframeofmainframe8'>
+          <img src={logo} alt="" />
+          <div id='contentinsideframeofmainframe8'>
+            <div id='insidecontentinsideframeofmainframe8'>
+              <span id='titleofinsidecontentinsideframeofmainframe8'>
+                QUICK LINK
+              </span>
+              <div className='linksofinsidecontentinsideframeofmainframe8'>
+                
+                <div className='linkseparator'>
+                  <span className='linktitle2'>Our Funds</span>
+                  <span className='goldenlink'>Coming soon...</span>
                 </div>
-                <span id='copyrighttext'>
-                    Copyright © 2025 Wealth Company Private Limited. | All rights reserved.
-                </span>
+                <div className='linkseparator'>
+                  <span className='linktitle2'>Tools & Resources</span>
+                  <span className='goldenlink'>Coming soon...</span>
+                </div>
+              </div>
             </div>
+            <div id='insidecontentinsideframeofmainframe8'>
+              <span id='titleofinsidecontentinsideframeofmainframe8'>
+                Other Links
+              </span>
+              <div className='linksofinsidecontentinsideframeofmainframe8'>
+                <Link className='linktitle2' to='/download-documents'>Downloads</Link>
+                <Link className='linktitle2' to='/factsheet'>Fact Sheet</Link>
+                <Link className='linktitle2' to='/disclosure'>Disclosures</Link>
+                <Link className='linktitle2' to='/navs-page'>NAVs</Link>
+                <Link className='linktitle2' to='/annual-reports'>Annual Reports</Link>
+                <Link className='linktitle2' to='/investor-services'>Investor Services</Link>
+                <Link className='linktitle2' to='/blogs'>Blogs</Link>
+                <Link className='linktitle2' to='/total-expense-ratio'>Total expense ratio</Link>
+                <Link className='linktitle2' to='/disclosure'>Disclosure</Link>
+
+
+              </div>
+            </div>
+            <div id='divforconnect'>
+              <span id='titleofdivforconnect'>CONNECT WITH US</span>
+              <div id='divinsideconnect'>
+                <div className='socialmediaicondiv'>
+                  <img src={facebook} alt="" className='socialmediaicon' />
+                </div>
+                <div className='socialmediaicondiv'>
+                  <img src={twitter} alt="" className='socialmediaicon' />
+                </div>
+                <div className='socialmediaicondiv'>
+                  <img src={linkedin} alt="" className='socialmediaicon' />
+                </div>
+                <div className='socialmediaicondiv'>
+                  <img src={insta} alt="" className='socialmediaicon' />
+                </div>
+                <div className='socialmediaicondiv'>
+                  <img src={youtube} alt="" className='socialmediaicon' />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span id='copyrighttext'>
+          Copyright © 2025 Wealth Company Private Limited. | All rights reserved.
+        </span>
+      </div>
         </>
     )
 }

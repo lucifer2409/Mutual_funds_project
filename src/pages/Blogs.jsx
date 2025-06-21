@@ -6,6 +6,7 @@ import shareicon from '../assets/shareicon.svg'
 import logo from '../assets/Logo.svg'
 import facebook from '../assets/facebook.svg'
 import twitter from '../assets/twitter.svg'
+import { Link } from 'react-router-dom'
 import linkedin from '../assets/linkedin.svg'
 import insta from '../assets/insta.svg'
 import youtube from '../assets/youtube.svg'
@@ -359,7 +360,7 @@ const Blogs = () => {
                 View more
             </button>
 
-            <div id='mainframe8' style={{marginTop: '260px'}}>
+            <div id='mainframe8' style={{marginTop: '280px'}}>
                 <div id='insideframeofmainframe8'>
                     <img src={logo} alt="" />
                     <div id='contentinsideframeofmainframe8'>
@@ -368,7 +369,7 @@ const Blogs = () => {
                                 QUICK LINK
                             </span>
                             <div className='linksofinsidecontentinsideframeofmainframe8'>
-                                <span className='linktitle2'>About Us</span>
+                                
                                 <div className='linkseparator'>
                                     <span className='linktitle2'>Our Funds</span>
                                     <span className='goldenlink'>Coming soon...</span>
@@ -381,13 +382,19 @@ const Blogs = () => {
                         </div>
                         <div id='insidecontentinsideframeofmainframe8'>
                             <span id='titleofinsidecontentinsideframeofmainframe8'>
-                                SEBI
+                                Other Links
                             </span>
                             <div className='linksofinsidecontentinsideframeofmainframe8'>
-                                <span className='linktitle2'>SEBU Smart ODR</span>
-                                <span className='linktitle2'>SEBI Scores</span>
-                                <span className='linktitle2'>SEBU Scores App (ios)</span>
-                                <span className='linktitle2'>SEBU Scores App (Android)</span>
+                                <Link className='linktitle2' to='/download-documents'>Downloads</Link>
+                                <Link className='linktitle2' to='/factsheet'>Fact Sheet</Link>
+                                <Link className='linktitle2' to='/disclosure'>Disclosures</Link>
+                                <Link className='linktitle2' to='/navs-page'>NAVs</Link>
+                                <Link className='linktitle2' to='/annual-reports'>Annual Reports</Link>
+                                <Link className='linktitle2' to='/investor-services'>Investor Services</Link>
+                                <Link className='linktitle2' to='/blogs'>Blogs</Link>
+                                <Link className='linktitle2' to='/total-expense-ratio'>Total expense ratio</Link>
+                                <Link className='linktitle2' to='/disclosure'>Disclosure</Link>
+
 
                             </div>
                         </div>

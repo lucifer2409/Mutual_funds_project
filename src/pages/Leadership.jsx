@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../Navbar';
+import { Link } from 'react-router-dom';
 import '../App.css';
 import '../styles/Leadership.css';
 import mapImage from '../assets/map.svg'; // You'll need to add this image
@@ -537,7 +538,7 @@ const Leadership = () => {
                 QUICK LINK
               </span>
               <div className='linksofinsidecontentinsideframeofmainframe8'>
-                <span className='linktitle2'>About Us</span>
+                
                 <div className='linkseparator'>
                   <span className='linktitle2'>Our Funds</span>
                   <span className='goldenlink'>Coming soon...</span>
@@ -550,13 +551,19 @@ const Leadership = () => {
             </div>
             <div id='insidecontentinsideframeofmainframe8'>
               <span id='titleofinsidecontentinsideframeofmainframe8'>
-                SEBI
+                Other Links
               </span>
               <div className='linksofinsidecontentinsideframeofmainframe8'>
-                <span className='linktitle2'>SEBU Smart ODR</span>
-                <span className='linktitle2'>SEBI Scores</span>
-                <span className='linktitle2'>SEBU Scores App (ios)</span>
-                <span className='linktitle2'>SEBU Scores App (Android)</span>
+                <Link className='linktitle2' to='/download-documents'>Downloads</Link>
+                <Link className='linktitle2' to='/factsheet'>Fact Sheet</Link>
+                <Link className='linktitle2' to='/disclosure'>Disclosures</Link>
+                <Link className='linktitle2' to='/navs-page'>NAVs</Link>
+                <Link className='linktitle2' to='/annual-reports'>Annual Reports</Link>
+                <Link className='linktitle2' to='/investor-services'>Investor Services</Link>
+                <Link className='linktitle2' to='/blogs'>Blogs</Link>
+                <Link className='linktitle2' to='/total-expense-ratio'>Total expense ratio</Link>
+                <Link className='linktitle2' to='/disclosure'>Disclosure</Link>
+
 
               </div>
             </div>
