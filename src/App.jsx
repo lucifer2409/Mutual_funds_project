@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import Analyticspage from './pages/Analyticspage'
 import { BrowserRouter as Router, Routes, Route, Form } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -848,6 +849,7 @@ function App() {
           <Route path="/disclosure" element={<Disclosurepage />} />
           <Route path='/blogs' element={<Blogs />} />
           <Route path='/blog-summary' element={<Blogsummary />} />
+          <Route path="/analyticspage" element={<Analyticspage />} />
           {/* Add other routes as needed */}
         </Routes>
       </GSAPProvider>
