@@ -9,6 +9,7 @@ import dropdown from '../assets/dropdown.svg'
 import twitter from '../assets/twitter.svg'
 import linkedin from '../assets/linkedin.svg'
 import insta from '../assets/insta.svg'
+import Scrolltotoplink from '../Scrolltotop'
 import logo from '../assets/Logo.svg'
 import youtube from '../assets/youtube.svg'
 
@@ -42,31 +43,6 @@ const Navspage = () => {
                             <button className='secondaryButtonformiddlesectionfortotalexpenseratio'>
                                 Historical
                             </button>
-                        </div>
-                        <div className='rightsideofthetopofmiddlesectionfortotalexpratio'>
-                            <span id='textforright2sideoftop2ofmiddlesectionfortotalexpenseratio'>
-                                Download
-                            </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" className='downloadicon'>
-                                <g clip-path="url(#clip0_216_2001)">
-                                    <path d="M2.85805 3.377L15.428 1.582C15.499 1.57182 15.5713 1.57702 15.64 1.59723C15.7088 1.61744 15.7724 1.65219 15.8266 1.69913C15.8807 1.74608 15.9241 1.80411 15.9539 1.86931C15.9837 1.9345 15.9991 2.00534 15.999 2.077V22.923C15.999 22.9946 15.9837 23.0653 15.954 23.1304C15.9243 23.1955 15.8809 23.2535 15.8269 23.3004C15.7729 23.3474 15.7094 23.3821 15.6407 23.4024C15.5721 23.4227 15.4999 23.428 15.429 23.418L2.85705 21.623C2.61867 21.5891 2.40054 21.4702 2.24274 21.2884C2.08493 21.1065 1.99805 20.8738 1.99805 20.633V4.367C1.99805 4.12621 2.08493 3.89351 2.24274 3.71164C2.40054 3.52978 2.61867 3.41095 2.85705 3.377H2.85805ZM3.99905 5.235V19.765L13.999 21.194V3.806L3.99905 5.235ZM16.999 19.5H19.999V5.5H16.999V3.5H20.999C21.2643 3.5 21.5186 3.60536 21.7062 3.79289C21.8937 3.98043 21.999 4.23478 21.999 4.5V20.5C21.999 20.7652 21.8937 21.0196 21.7062 21.2071C21.5186 21.3946 21.2643 21.5 20.999 21.5H16.999V19.5ZM10.199 12.5L12.999 16.5H10.599L8.99905 14.214L7.39905 16.5H4.99905L7.79905 12.5L4.99905 8.5H7.39905L8.99905 10.786L10.599 8.5H12.999L10.199 12.5Z" fill="#AD8E53" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_216_2001">
-                                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" className='downloadicon'>
-                                <g clip-path="url(#clip0_216_2005)">
-                                    <path d="M3 3.492C3 2.944 3.447 2.5 3.999 2.5H16L21 7.5V21.493C21.0009 21.6243 20.976 21.7545 20.9266 21.8762C20.8772 21.9979 20.8043 22.1087 20.7121 22.2022C20.6199 22.2957 20.5101 22.3701 20.3892 22.4212C20.2682 22.4723 20.1383 22.4991 20.007 22.5H3.993C3.73038 22.4982 3.47902 22.3931 3.29322 22.2075C3.10742 22.0219 3.00209 21.7706 3 21.508V3.492ZM5 4.5V20.5H19V8.5H16V14.5H10V16.5H8V8.5H15V4.5H5ZM10 10.5V12.5H14V10.5H10Z" fill="#AD8E53" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_216_2005">
-                                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
                         </div>
                     </div>
                     <div id='bottomofthisdiv'>
@@ -298,15 +274,15 @@ const Navspage = () => {
                                 Other Links
                             </span>
                             <div className='linksofinsidecontentinsideframeofmainframe8'>
-                                <Link className='linktitle2' to='/download-documents'>Downloads</Link>
-                                <Link className='linktitle2' to='/factsheet'>Fact Sheet</Link>
-                                <Link className='linktitle2' to='/disclosure'>Disclosures</Link>
-                                <Link className='linktitle2' to='/navs-page'>NAVs</Link>
-                                <Link className='linktitle2' to='/annual-reports'>Annual Reports</Link>
-                                <Link className='linktitle2' to='/investor-services'>Investor Services</Link>
-                                <Link className='linktitle2' to='/blogs'>Blogs</Link>
-                                <Link className='linktitle2' to='/total-expense-ratio'>Total expense ratio</Link>
-                                <Link className='linktitle2' to='/disclosure'>Disclosure</Link>
+                                <Scrolltotoplink className='linktitle2' to='/download-documents'>Downloads</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/factsheet'>Fact Sheet</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/disclosure'>Disclosures</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/navs-page'>NAVs</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/annual-reports'>Annual Reports</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/investor-services'>Investor Services</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/blogs'>Blogs</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/total-expense-ratio'>Total expense ratio</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/disclosure'>Disclosure</Scrolltotoplink>
 
 
                             </div>
@@ -316,10 +292,10 @@ const Navspage = () => {
                                 SEBI
                             </span>
                             <div className='linksofinsidecontentinsideframeofmainframe8'>
-                                <Link className='linktitle2' to='/'>SEBI Smart ODR</Link>
-                                <Link className='linktitle2' to='/'>SEBI Scores</Link>
-                                <Link className='linktitle2' to='/'>SEBI Scores App (iOS)</Link>
-                                <Link className='linktitle2' to='/'>SEBI Scores App (Andriod)</Link>
+                                <Scrolltotoplink className='linktitle2' to='/'>SEBI Smart ODR</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/'>SEBI Scores</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/'>SEBI Scores App (iOS)</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/'>SEBI Scores App (Andriod)</Scrolltotoplink>
                             </div>
                         </div>
                         <div id='divforconnect'>

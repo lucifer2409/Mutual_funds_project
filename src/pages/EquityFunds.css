@@ -350,6 +350,11 @@
     /* 19.6px */
     /* transition: background-color 0.3s; */
 }
+.invest-btn:hover{
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+}
 
 @media (max-width: 1200px) {
     .fund-cards-grid {

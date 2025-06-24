@@ -10,6 +10,7 @@ import youtube from '../assets/youtube.svg'
 import instablack from '../assets/instablack.svg'
 import facebookblack from '../assets/facebookblack.svg'
 import xblack from '../assets/xblack.svg'
+import Scrolltotoplink from '../Scrolltotop'
 import confusedman from '../assets/confusedman.png'
 import linkedinblack from '../assets/linkedinblack.svg'
 import blogimage from '../assets/blogimage.png'
@@ -253,10 +254,10 @@ const Blogsummary = () => {
                                 SEBI
                             </span>
                             <div className='linksofinsidecontentinsideframeofmainframe8'>
-                                <Link className='linktitle2' to='/'>SEBI Smart ODR</Link>
-                                <Link className='linktitle2' to='/'>SEBI Scores</Link>
-                                <Link className='linktitle2' to='/'>SEBI Scores App (iOS)</Link>
-                                <Link className='linktitle2' to='/'>SEBI Scores App (Andriod)</Link>
+                                <Scrolltotoplink className='linktitle2' to='/'>SEBI Smart ODR</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/'>SEBI Scores</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/'>SEBI Scores App (iOS)</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/'>SEBI Scores App (Andriod)</Scrolltotoplink>
                             </div>
                         </div>
                         <div id='divforconnect'>

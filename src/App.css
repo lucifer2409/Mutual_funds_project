@@ -645,6 +645,48 @@ html {
   align-self: stretch;
 }
 
+
+#goldentext {
+  color: var(--SecondaryColor, #AD8E53);
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+#chessdiv {
+  display: flex;
+  padding: 77px 145px 3.939px 142.187px;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+}
+
+#chessimage {
+  width: 600.813px;
+  height: 400.061px;
+}
+
+#mainframe1forleadership {
+  display: flex;
+  width: 1440px;
+  height: 460px;
+  padding: 60px 100px 100px 100px;
+  align-items: center;
+  gap: 48px;
+  flex-shrink: 0;
+}
+
+#black {
+  color: var(--Primarycolor, #282828);
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 #topsectionforfaqsection2div {
   display: flex;
   flex-direction: column;
@@ -887,6 +929,11 @@ html {
   align-items: center;
   gap: 23px;
   align-self: stretch;
+}
+
+#lefttextformainframe1 {
+  display: inline-grid;
+  width: 800px;
 }
 
 #lefttextfortopsectionformiddlesectionofsection3ofsection2foranalyticspage {
@@ -1733,6 +1780,7 @@ html {
 
   /* 19.6px */
 }
+
 .blackbuttonforanalyticspage:hover {
   background: var(--Primarycolor-hover, #1F1F1F);
   cursor: pointer;
@@ -2015,8 +2063,14 @@ html {
 
 #rightdivforanalyticspage {
   display: flex;
+  position: sticky;
+  top: 80px;
+  height: fit-content;
   width: 397px;
   flex-direction: column;
+  max-height: calc(100vh - 100px);
+  /* Prevent it from being too tall */
+  overflow-y: auto;
   align-items: flex-start;
   gap: -10px;
 }
@@ -2778,9 +2832,12 @@ html {
   border-radius: 24px;
   border: 1px solid var(--Text_secondary, #B7B7B7);
   background: var(--BG_color1, #FFF);
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10);
   justify-content: space-between;
   align-items: center;
+}
+
+.cardfordownloaddocumentspage:hover {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10);
 }
 
 
@@ -3178,7 +3235,8 @@ html {
 
 .primaryButton:hover {
   cursor: pointer;
-  background-color: #E2E2E2;
+  background-color: #000;
+  color: white;
 }
 
 #lefttextforslider {
@@ -5880,7 +5938,7 @@ html {
   display: flex;
   width: 1440px;
   padding: 72px 100px;
-  align-items: flex-start;
+  align-items: center;
   gap: 48px;
   background: var(--BG_color, #282828);
 }

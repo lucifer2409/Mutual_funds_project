@@ -5,11 +5,14 @@ import search from '../assets/search.svg'
 import shareicon from '../assets/shareicon.svg'
 import logo from '../assets/Logo.svg'
 import facebook from '../assets/facebook.svg'
+import Scrolltotoplink from '../Scrolltotop'
 import twitter from '../assets/twitter.svg'
 import { Link } from 'react-router-dom'
 import linkedin from '../assets/linkedin.svg'
 import insta from '../assets/insta.svg'
+// import Scrolltotoplink from '../Scrolltotop'
 import youtube from '../assets/youtube.svg'
+import Blogsummary from './Blogsummary'
 
 const Blogs = () => {
     return (
@@ -64,7 +67,7 @@ const Blogs = () => {
                             <img src={confusedman} alt="" className='imageforcard' />
                             <div className='contentforcard'>
                                 <span className='textforcard'>
-                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <span className='linkforcard'>READ MORE</span>
+                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <Scrolltotoplink className="linkforcard" to='/blog-summary'>READ MORE</Scrolltotoplink>
                                 </span>
                                 <div className='otherdetailsforcard'>
                                     <div className='leftsectionforotherdetailsforcard'>
@@ -88,7 +91,7 @@ const Blogs = () => {
                             <img src={confusedman} alt="" className='imageforcard' />
                             <div className='contentforcard'>
                                 <span className='textforcard'>
-                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <span className='linkforcard'>READ MORE</span>
+                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <Scrolltotoplink className='linkforcard' to='/blog-summary'>READ MORE</Scrolltotoplink>
                                 </span>
                                 <div className='otherdetailsforcard'>
                                     <div className='leftsectionforotherdetailsforcard'>
@@ -112,7 +115,7 @@ const Blogs = () => {
                             <img src={confusedman} alt="" className='imageforcard' />
                             <div className='contentforcard'>
                                 <span className='textforcard'>
-                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <span className='linkforcard'>READ MORE</span>
+                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <Scrolltotoplink className="linkforcard" to='/blog-summary'>READ MORE</Scrolltotoplink>
                                 </span>
                                 <div className='otherdetailsforcard'>
                                     <div className='leftsectionforotherdetailsforcard'>
@@ -136,105 +139,7 @@ const Blogs = () => {
                             <img src={confusedman} alt="" className='imageforcard' />
                             <div className='contentforcard'>
                                 <span className='textforcard'>
-                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <span className='linkforcard'>READ MORE</span>
-                                </span>
-                                <div className='otherdetailsforcard'>
-                                    <div className='leftsectionforotherdetailsforcard'>
-                                        <span className='otherdetailsfortext'>
-                                            Jul 9, 2024
-                                        </span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="17" viewBox="0 0 2 17" fill="none">
-                                            <path d="M1 0.666626V16.6666" stroke="#E2E2E2" />
-                                        </svg>
-                                        <span className='otherdetailsfortext'>
-                                            5 min read
-                                        </span>
-                                    </div>
-                                    <div className='shareicondiv'>
-                                        <img src={shareicon} alt="" id='shareicon' />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='rowforblogspage'>
-                        <div className='cardforblogspage'>
-                            <img src={confusedman} alt="" className='imageforcard' />
-                            <div className='contentforcard'>
-                                <span className='textforcard'>
-                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <span className='linkforcard'>READ MORE</span>
-                                </span>
-                                <div className='otherdetailsforcard'>
-                                    <div className='leftsectionforotherdetailsforcard'>
-                                        <span className='otherdetailsfortext'>
-                                            Jul 9, 2024
-                                        </span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="17" viewBox="0 0 2 17" fill="none">
-                                            <path d="M1 0.666626V16.6666" stroke="#E2E2E2" />
-                                        </svg>
-                                        <span className='otherdetailsfortext'>
-                                            5 min read
-                                        </span>
-                                    </div>
-                                    <div className='shareicondiv'>
-                                        <img src={shareicon} alt="" id='shareicon' />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='cardforblogspage'>
-                            <img src={confusedman} alt="" className='imageforcard' />
-                            <div className='contentforcard'>
-                                <span className='textforcard'>
-                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <span className='linkforcard'>READ MORE</span>
-                                </span>
-                                <div className='otherdetailsforcard'>
-                                    <div className='leftsectionforotherdetailsforcard'>
-                                        <span className='otherdetailsfortext'>
-                                            Jul 9, 2024
-                                        </span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="17" viewBox="0 0 2 17" fill="none">
-                                            <path d="M1 0.666626V16.6666" stroke="#E2E2E2" />
-                                        </svg>
-                                        <span className='otherdetailsfortext'>
-                                            5 min read
-                                        </span>
-                                    </div>
-                                    <div className='shareicondiv'>
-                                        <img src={shareicon} alt="" id='shareicon' />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='cardforblogspage'>
-                            <img src={confusedman} alt="" className='imageforcard' />
-                            <div className='contentforcard'>
-                                <span className='textforcard'>
-                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <span className='linkforcard'>READ MORE</span>
-                                </span>
-                                <div className='otherdetailsforcard'>
-                                    <div className='leftsectionforotherdetailsforcard'>
-                                        <span className='otherdetailsfortext'>
-                                            Jul 9, 2024
-                                        </span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="17" viewBox="0 0 2 17" fill="none">
-                                            <path d="M1 0.666626V16.6666" stroke="#E2E2E2" />
-                                        </svg>
-                                        <span className='otherdetailsfortext'>
-                                            5 min read
-                                        </span>
-                                    </div>
-                                    <div className='shareicondiv'>
-                                        <img src={shareicon} alt="" id='shareicon' />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='cardforblogspage'>
-                            <img src={confusedman} alt="" className='imageforcard' />
-                            <div className='contentforcard'>
-                                <span className='textforcard'>
-                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <span className='linkforcard'>READ MORE</span>
+                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <Scrolltotoplink className="linkforcard" to='/blog-summary'>READ MORE</Scrolltotoplink>
                                 </span>
                                 <div className='otherdetailsforcard'>
                                     <div className='leftsectionforotherdetailsforcard'>
@@ -260,7 +165,7 @@ const Blogs = () => {
                             <img src={confusedman} alt="" className='imageforcard' />
                             <div className='contentforcard'>
                                 <span className='textforcard'>
-                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <span className='linkforcard'>READ MORE</span>
+                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <Scrolltotoplink className="linkforcard" to='/blog-summary'>READ MORE</Scrolltotoplink>
                                 </span>
                                 <div className='otherdetailsforcard'>
                                     <div className='leftsectionforotherdetailsforcard'>
@@ -284,7 +189,7 @@ const Blogs = () => {
                             <img src={confusedman} alt="" className='imageforcard' />
                             <div className='contentforcard'>
                                 <span className='textforcard'>
-                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <span className='linkforcard'>READ MORE</span>
+                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <Scrolltotoplink className="linkforcard" to='/blog-summary'>READ MORE</Scrolltotoplink>
                                 </span>
                                 <div className='otherdetailsforcard'>
                                     <div className='leftsectionforotherdetailsforcard'>
@@ -308,7 +213,7 @@ const Blogs = () => {
                             <img src={confusedman} alt="" className='imageforcard' />
                             <div className='contentforcard'>
                                 <span className='textforcard'>
-                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <span className='linkforcard'>READ MORE</span>
+                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <Scrolltotoplink className="linkforcard" to='/blog-summary'>READ MORE</Scrolltotoplink>
                                 </span>
                                 <div className='otherdetailsforcard'>
                                     <div className='leftsectionforotherdetailsforcard'>
@@ -332,7 +237,105 @@ const Blogs = () => {
                             <img src={confusedman} alt="" className='imageforcard' />
                             <div className='contentforcard'>
                                 <span className='textforcard'>
-                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <span className='linkforcard'>READ MORE</span>
+                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <Scrolltotoplink className="linkforcard" to='/blog-summary'>READ MORE</Scrolltotoplink>
+                                </span>
+                                <div className='otherdetailsforcard'>
+                                    <div className='leftsectionforotherdetailsforcard'>
+                                        <span className='otherdetailsfortext'>
+                                            Jul 9, 2024
+                                        </span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="17" viewBox="0 0 2 17" fill="none">
+                                            <path d="M1 0.666626V16.6666" stroke="#E2E2E2" />
+                                        </svg>
+                                        <span className='otherdetailsfortext'>
+                                            5 min read
+                                        </span>
+                                    </div>
+                                    <div className='shareicondiv'>
+                                        <img src={shareicon} alt="" id='shareicon' />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='rowforblogspage'>
+                        <div className='cardforblogspage'>
+                            <img src={confusedman} alt="" className='imageforcard' />
+                            <div className='contentforcard'>
+                                <span className='textforcard'>
+                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <Scrolltotoplink className="linkforcard" to='/blog-summary'>READ MORE</Scrolltotoplink>
+                                </span>
+                                <div className='otherdetailsforcard'>
+                                    <div className='leftsectionforotherdetailsforcard'>
+                                        <span className='otherdetailsfortext'>
+                                            Jul 9, 2024
+                                        </span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="17" viewBox="0 0 2 17" fill="none">
+                                            <path d="M1 0.666626V16.6666" stroke="#E2E2E2" />
+                                        </svg>
+                                        <span className='otherdetailsfortext'>
+                                            5 min read
+                                        </span>
+                                    </div>
+                                    <div className='shareicondiv'>
+                                        <img src={shareicon} alt="" id='shareicon' />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='cardforblogspage'>
+                            <img src={confusedman} alt="" className='imageforcard' />
+                            <div className='contentforcard'>
+                                <span className='textforcard'>
+                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <Scrolltotoplink className="linkforcard" to='/blog-summary'>READ MORE</Scrolltotoplink>
+                                </span>
+                                <div className='otherdetailsforcard'>
+                                    <div className='leftsectionforotherdetailsforcard'>
+                                        <span className='otherdetailsfortext'>
+                                            Jul 9, 2024
+                                        </span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="17" viewBox="0 0 2 17" fill="none">
+                                            <path d="M1 0.666626V16.6666" stroke="#E2E2E2" />
+                                        </svg>
+                                        <span className='otherdetailsfortext'>
+                                            5 min read
+                                        </span>
+                                    </div>
+                                    <div className='shareicondiv'>
+                                        <img src={shareicon} alt="" id='shareicon' />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='cardforblogspage'>
+                            <img src={confusedman} alt="" className='imageforcard' />
+                            <div className='contentforcard'>
+                                <span className='textforcard'>
+                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <Scrolltotoplink className="linkforcard" to='/blog-summary'>READ MORE</Scrolltotoplink>
+                                </span>
+                                <div className='otherdetailsforcard'>
+                                    <div className='leftsectionforotherdetailsforcard'>
+                                        <span className='otherdetailsfortext'>
+                                            Jul 9, 2024
+                                        </span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="17" viewBox="0 0 2 17" fill="none">
+                                            <path d="M1 0.666626V16.6666" stroke="#E2E2E2" />
+                                        </svg>
+                                        <span className='otherdetailsfortext'>
+                                            5 min read
+                                        </span>
+                                    </div>
+                                    <div className='shareicondiv'>
+                                        <img src={shareicon} alt="" id='shareicon' />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='cardforblogspage'>
+                            <img src={confusedman} alt="" className='imageforcard' />
+                            <div className='contentforcard'>
+                                <span className='textforcard'>
+                                    Money Mind Games: Why You Splurge and Save, & How Mutual Funds Can Help!... <Scrolltotoplink className="linkforcard" to='/blog-summary'>READ MORE</Scrolltotoplink>
                                 </span>
                                 <div className='otherdetailsforcard'>
                                     <div className='leftsectionforotherdetailsforcard'>
@@ -385,15 +388,15 @@ const Blogs = () => {
                                 Other Links
                             </span>
                             <div className='linksofinsidecontentinsideframeofmainframe8'>
-                                <Link className='linktitle2' to='/download-documents'>Downloads</Link>
-                                <Link className='linktitle2' to='/factsheet'>Fact Sheet</Link>
-                                <Link className='linktitle2' to='/disclosure'>Disclosures</Link>
-                                <Link className='linktitle2' to='/navs-page'>NAVs</Link>
-                                <Link className='linktitle2' to='/annual-reports'>Annual Reports</Link>
-                                <Link className='linktitle2' to='/investor-services'>Investor Services</Link>
-                                <Link className='linktitle2' to='/blogs'>Blogs</Link>
-                                <Link className='linktitle2' to='/total-expense-ratio'>Total expense ratio</Link>
-                                <Link className='linktitle2' to='/disclosure'>Disclosure</Link>
+                                <Scrolltotoplink className='linktitle2' to='/download-documents'>Downloads</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/factsheet'>Fact Sheet</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/disclosure'>Disclosures</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/navs-page'>NAVs</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/annual-reports'>Annual Reports</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/investor-services'>Investor Services</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/blogs'>Blogs</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/total-expense-ratio'>Total expense ratio</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/disclosure'>Disclosure</Scrolltotoplink>
 
 
                             </div>
@@ -403,10 +406,10 @@ const Blogs = () => {
                                 SEBI
                             </span>
                             <div className='linksofinsidecontentinsideframeofmainframe8'>
-                                <Link className='linktitle2' to='/'>SEBI Smart ODR</Link>
-                                <Link className='linktitle2' to='/'>SEBI Scores</Link>
-                                <Link className='linktitle2' to='/'>SEBI Scores App (iOS)</Link>
-                                <Link className='linktitle2' to='/'>SEBI Scores App (Andriod)</Link>
+                                <Scrolltotoplink className='linktitle2' to='/'>SEBI Smart ODR</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/'>SEBI Scores</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/'>SEBI Scores App (iOS)</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/'>SEBI Scores App (Andriod)</Scrolltotoplink>
                             </div>
                         </div>
                         <div id='divforconnect'>

@@ -5,6 +5,7 @@ import savepdf from '../assets/savepdf.png'
 import facebook from '../assets/facebook.svg'
 import twitter from '../assets/twitter.svg'
 import linkedin from '../assets/linkedin.svg'
+import Scrolltotoplink from '../Scrolltotop'
 import insta from '../assets/insta.svg'
 import { Link } from 'react-router-dom'
 import logo from '../assets/Logo.svg'
@@ -218,15 +219,15 @@ const Disclosurepage = () => {
                                 Other Links
                             </span>
                             <div className='linksofinsidecontentinsideframeofmainframe8'>
-                                <Link className='linktitle2' to='/download-documents'>Downloads</Link>
-                                <Link className='linktitle2' to='/factsheet'>Fact Sheet</Link>
-                                <Link className='linktitle2' to='/disclosure'>Disclosures</Link>
-                                <Link className='linktitle2' to='/navs-page'>NAVs</Link>
-                                <Link className='linktitle2' to='/annual-reports'>Annual Reports</Link>
-                                <Link className='linktitle2' to='/investor-services'>Investor Services</Link>
-                                <Link className='linktitle2' to='/blogs'>Blogs</Link>
-                                <Link className='linktitle2' to='/total-expense-ratio'>Total expense ratio</Link>
-                                <Link className='linktitle2' to='/disclosure'>Disclosure</Link>
+                                <Scrolltotoplink className='linktitle2' to='/download-documents'>Downloads</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/factsheet'>Fact Sheet</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/disclosure'>Disclosures</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/navs-page'>NAVs</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/annual-reports'>Annual Reports</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/investor-services'>Investor Services</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/blogs'>Blogs</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/total-expense-ratio'>Total expense ratio</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/disclosure'>Disclosure</Scrolltotoplink>
 
 
                             </div>
@@ -236,10 +237,10 @@ const Disclosurepage = () => {
                                 SEBI
                             </span>
                             <div className='linksofinsidecontentinsideframeofmainframe8'>
-                                <Link className='linktitle2' to='/'>SEBI Smart ODR</Link>
-                                <Link className='linktitle2' to='/'>SEBI Scores</Link>
-                                <Link className='linktitle2' to='/'>SEBI Scores App (iOS)</Link>
-                                <Link className='linktitle2' to='/'>SEBI Scores App (Andriod)</Link>
+                                <Scrolltotoplink className='linktitle2' to='/'>SEBI Smart ODR</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/'>SEBI Scores</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/'>SEBI Scores App (iOS)</Scrolltotoplink>
+                                <Scrolltotoplink className='linktitle2' to='/'>SEBI Scores App (Andriod)</Scrolltotoplink>
                             </div>
                         </div>
                         <div id='divforconnect'>

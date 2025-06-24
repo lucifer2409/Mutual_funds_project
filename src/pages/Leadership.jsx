@@ -7,6 +7,7 @@ import mapImage from '../assets/map.svg'; // You'll need to add this image
 import logo from '../assets/Logo.svg';
 import timer from '../assets/timer.svg'; // Add timer icon image
 import leaderImage1 from '../assets/avatar.svg'; // Add placeholder leader images
+import Scrolltotoplink from '../Scrolltotop';
 import leaderImage2 from '../assets/avatar.svg'; // Add placeholder leader images
 import leaderImage3 from '../assets/avatar.svg'; // Add placeholder leader images
 import birdimage from '../assets/bird.svg';
@@ -21,6 +22,7 @@ import linkedin from '../assets/linkedin.svg'; // Add LinkedIn icon image
 import insta from '../assets/insta.svg'; // Add Instagram icon image
 import youtube from '../assets/youtube.svg'; // Add YouTube icon image
 import Phone from '../assets/Phone.svg'; // Add phone icon image
+import chess from '../assets/chess.svg'
 import mapimage from '../assets/mapimage.png'; // Add map image
 import layer0 from '../assets/layer0.png'; // Add layer image
 import buildingline from '../assets/buildingline.svg'; // Add building line image
@@ -35,10 +37,19 @@ const Leadership = () => {
   return (
     <>
       <Navbar />
-      <div className='h-[519px] w-[1440px] bg-[#282828] flex pt-[24px] pr-[100px] pb-[100px] pl-[100px]
- flex-col items-center gap-[48px]' id='mainframe1forleadership'>
-        <img src={birdimage} alt="" className='w-[1551px] h-[275px]' />
-        <span id='firsttext'>More Than a Mutual Fund.  <span id='secondtext'>A Mindset.</span></span>
+      <div className='h-[519px] w-[1440px] bg-[#FCF5E8] flex pt-[24px] pr-[100px] pb-[100px] pl-[100px]
+ items-center gap-[48px]' id='mainframe1forleadership'>
+        <span id='lefttextformainframe1'>
+          <span id='goldentext'>More Than a Mutual Fund.</span>
+          <span id='black'>A Mindset.</span>
+        </span>
+        <div id='chessDiv'>
+          <img src={chess} alt="" id='chessimage' />
+        </div>
+
+
+
+
       </div>
       <div className='flex w-[1240px] p-[48px] justify-center items-center gap-[10px] rounded-[24px] bg-[#FFFFFF] shadow-[0px_4px_24px_rgba(0,0,0,0.10)] absolute top-[660px] left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]' id='mainframe2forleadership'>
         <span className='othertext flex flex-col gap-[16px]'>
@@ -529,7 +540,7 @@ const Leadership = () => {
         </div>
       </div>
 
-      <div id='mainframe8' className='absolute top-[5550px] left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col gap-[48px] bg-[#ffffff] w-[1440px] h-[100%]'>
+      <div id='mainframe8' className='absolute top-[5550px] left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col gap-[48px] bg-[#ffffff] w-[1440px] h-[100%]' style={{ marginTop: '400px' }}>
         <div id='insideframeofmainframe8'>
           <img src={logo} alt="" />
           <div id='contentinsideframeofmainframe8'>
@@ -555,15 +566,15 @@ const Leadership = () => {
                 Other Links
               </span>
               <div className='linksofinsidecontentinsideframeofmainframe8'>
-                <Link className='linktitle2' to='/download-documents'>Downloads</Link>
-                <Link className='linktitle2' to='/factsheet'>Fact Sheet</Link>
-                <Link className='linktitle2' to='/disclosure'>Disclosures</Link>
-                <Link className='linktitle2' to='/navs-page'>NAVs</Link>
-                <Link className='linktitle2' to='/annual-reports'>Annual Reports</Link>
-                <Link className='linktitle2' to='/investor-services'>Investor Services</Link>
-                <Link className='linktitle2' to='/blogs'>Blogs</Link>
-                <Link className='linktitle2' to='/total-expense-ratio'>Total expense ratio</Link>
-                <Link className='linktitle2' to='/disclosure'>Disclosure</Link>
+                <Scrolltotoplink className='linktitle2' to='/download-documents'>Downloads</Scrolltotoplink>
+                <Scrolltotoplink className='linktitle2' to='/factsheet'>Fact Sheet</Scrolltotoplink>
+                <Scrolltotoplink className='linktitle2' to='/disclosure'>Disclosures</Scrolltotoplink>
+                <Scrolltotoplink className='linktitle2' to='/navs-page'>NAVs</Scrolltotoplink>
+                <Scrolltotoplink className='linktitle2' to='/annual-reports'>Annual Reports</Scrolltotoplink>
+                <Scrolltotoplink className='linktitle2' to='/investor-services'>Investor Services</Scrolltotoplink>
+                <Scrolltotoplink className='linktitle2' to='/blogs'>Blogs</Scrolltotoplink>
+                <Scrolltotoplink className='linktitle2' to='/total-expense-ratio'>Total expense ratio</Scrolltotoplink>
+                <Scrolltotoplink className='linktitle2' to='/disclosure'>Disclosure</Scrolltotoplink>
 
 
               </div>
@@ -573,10 +584,10 @@ const Leadership = () => {
                 SEBI
               </span>
               <div className='linksofinsidecontentinsideframeofmainframe8'>
-                <Link className='linktitle2' to='/'>SEBI Smart ODR</Link>
-                <Link className='linktitle2' to='/'>SEBI Scores</Link>
-                <Link className='linktitle2' to='/'>SEBI Scores App (iOS)</Link>
-                <Link className='linktitle2' to='/'>SEBI Scores App (Andriod)</Link>
+                <Scrolltotoplink className='linktitle2' to='/'>SEBI Smart ODR</Scrolltotoplink>
+                <Scrolltotoplink className='linktitle2' to='/'>SEBI Scores</Scrolltotoplink>
+                <Scrolltotoplink className='linktitle2' to='/'>SEBI Scores App (iOS)</Scrolltotoplink>
+                <Scrolltotoplink className='linktitle2' to='/'>SEBI Scores App (Andriod)</Scrolltotoplink>
               </div>
             </div>
             <div id='divforconnect'>
