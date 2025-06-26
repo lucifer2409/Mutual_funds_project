@@ -6,7 +6,7 @@ import add from '../assets/add.svg';
 const Leaderscard = () => {
     return (
         <>
-            <div className='card'>
+            <div className='card scrollable-div'>
                 <div className='card-inner'>
                     <div className='card-front'>
                         <div className='cardsfortheleaders'>
@@ -26,7 +26,7 @@ const Leaderscard = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='card-back'>
+                    <div className='card-back scrollable-div'>
                         <div className='backcardfortheleaders'>
                             <div id='insideframeforbackcardfortheleaders'>
                                 <div id='topframeforbackcardfortheleaders'>
