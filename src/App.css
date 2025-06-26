@@ -89,6 +89,104 @@ html {
   width: 100%;
 }
 
+.maincontainer {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  border-radius: 24px;
+  width: 292px;
+}
+
+.backbottomofframe1 {
+  color: var(--Primary-Text, #FFF);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#contentdiv {
+  color: var(--Primary-Text, #FFF);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 424px;
+  overflow-y: scroll;
+}
+
+.card {
+  min-width: 292px;
+  height: 440px;
+  perspective: 1500px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  /* background-color: #1F1F1F; */
+  z-index: 2;
+}
+
+.card-back {
+  /* background-color: #ad8e53; */
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+
+#topframeforbackcardfortheleaders {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+#insideframeforbackcardfortheleaders {
+  display: flex;
+  height: 499px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.backcardfortheleaders {
+  display: flex;
+  min-width: 292px;
+  height: 547px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  border-radius: 24px;
+  background: var(--SecondaryColor, #AD8E53);
+}
+
 .divider {
   display: flex;
   flex-direction: column;
@@ -176,6 +274,64 @@ html {
 #rightsideofinsideparallaxContainer2 {
   width: 608px;
   height: 345px;
+}
+
+.contentcardfortheleaders {
+  display: flex;
+  min-width: 292px;
+  height: 547px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  border-radius: 24px;
+  background: var(--SecondaryColor, #AD8E53);
+}
+
+.insidecontentframe {
+  display: flex;
+  height: 499px;
+  flex-direction: column;
+  overflow: scroll;
+  align-items: flex-start;
+  gap: 12px;
+  flex-shrink: 0;
+  align-self: stretch;
+  color: var(--Primary-Text, #FFF);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#topSectioninsidecontentframe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+#toptextoftopSectioninsidecontentframe {
+  color: var(--Primary-Text, #FFF);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#bottomtextoftopSectioninsidecontentframe {
+  color: var(--Primary-Text, #FFF);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .othercontentinsideofinsideparallaxContainer2div {
@@ -739,6 +895,44 @@ html {
   gap: 24px;
   align-self: stretch;
   border-bottom: 1px solid var(--Line, #E2E2E2);
+}
+
+/* Card flip styles - add or update these */
+.card {
+  min-width: 292px;
+  height: 440px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 24px;
+}
+
+.card-front {
+  z-index: 2;
+}
+
+.backcardfortheleaders {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 24px;
+  color: #FFF;
 }
 
 #textforcarddivforfaqsection1div {
@@ -3164,7 +3358,7 @@ html {
   display: flex;
   padding: 8px 12px;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
   border-radius: 24px;
   background: var(--Color-3, #FCF5E8);
 }
@@ -3741,7 +3935,7 @@ html {
   align-items: center;
   border-radius: 24px;
   background: var(--Color-3, #FCF5E8);
-  gap: 8px;
+  gap: 4px;
 }
 
 .textforbuttonsforcards {
@@ -3796,9 +3990,15 @@ html {
   justify-content: space-between;
   align-items: center;
   border-radius: 24px;
-  border: 1px solid var(--SecondaryColor, #AD8E53);
+  border: 1px solid var(--Text_secondary, #B7B7B7);
   background: var(--BG_color1, #FFF);
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10);
+  /* box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10); */
+}
+
+#cardofbottomsectionofmiddlesection:hover {
+  cursor: pointer;
+  border: 1px solid var(--SecondaryColor, #AD8E53);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.10);
 }
 
 #topsectionofmiddlesectionofinvestorservicespage {
@@ -5356,7 +5556,7 @@ html {
 .maincontainerofnav1 {
   display: none;
   width: 702px;
-  height: 220px;
+  height: auto;
   /* Initially hidden */
   position: absolute;
   top: calc(100% + 15px);
@@ -5375,7 +5575,7 @@ html {
 .navbar-lists:hover .maincontainerofnav1 {
   display: block;
   width: 702px;
-  height: 220px;
+  height: 260px;
   /* Show on hover */
 }
 
@@ -5599,20 +5799,14 @@ html {
 }
 
 
+
 .scroll-container {
   position: relative;
-  mask-image: linear-gradient(to right,
-      rgba(0, 0, 0, 1) 70%,
-      rgba(0, 0, 0, 0.5) 105%,
-      rgba(0, 0, 0, 0) 100%);
-  -webkit-mask-image: linear-gradient(to right,
-      rgba(0, 0, 0, 1) 70%,
-      rgba(0, 0, 0, 0.5) 105%,
-      rgba(0, 0, 0, 0) 100%);
+  height: 700px;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0.5) 105%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0.5) 105%, rgba(0, 0, 0, 0) 100%);
   scrollbar-width: none;
-  /* Firefox */
   -ms-overflow-style: none;
-  /* IE and Edge */
 }
 
 
@@ -5703,6 +5897,39 @@ html {
   gap: 12px;
 }
 
+.default-white-button {
+  border-radius: 8px;
+  border: 1px solid var(--Primarycolor, #282828);
+  background: var(--BG_color1, #FFF);
+  display: flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--Primarycolor, #282828);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.default-black-button {
+  display: flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--Primary-Text, #FFF);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 8px;
+  background: var(--Primarycolor, #282828);
+}
+
 .trusteecard {
   display: flex;
   flex-direction: column;
@@ -5710,6 +5937,11 @@ html {
   flex: 1 0 0;
   border-radius: 24px;
   background: var(--BG_color1, #FFF);
+}
+
+.trusteecard:hover {
+  box-shadow: 0px 19px 28px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
 }
 
 #topoftrusteecard {
@@ -5963,7 +6195,7 @@ html {
 
 .frameforaddresssection {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
   align-self: stretch;
 }
@@ -7116,6 +7348,9 @@ html {
 .blackbutton:hover,
 .defaultgoldenbutton:hover {
   transform: scale(1.05);
+  background-color: #1F1F1F;
+  cursor: pointer;
+  color: white;
 }
 
 /* Add hover effect to cards */
@@ -7161,14 +7396,15 @@ html {
 
 .card-back {
   display: flex;
-  width: 292px;
+  /* width: 292px; */
   height: 547px;
-  padding: 24px;
+  /* padding: 24px; */
   flex-direction: column;
   align-items: flex-start;
   gap: 48px;
   border-radius: 24px;
   background: var(--SecondaryColor, #AD8E53);
+  overflow: hidden;
 }
 
 #insidecardback {

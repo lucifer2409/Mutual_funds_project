@@ -16,7 +16,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isfunddropdownOpen, setIsfunddropdownOpen] = useState(false);
     const [istoolsdropdownOpen, setIstoolsdropdownOpen] = useState(false);
-    const [isopenforourfunds, setIsopenforourfunds] = useState(false);
+    const [isopenforourfunds, setIsopenforourfunds] = useState(true);
     const navigate = useNavigate();
 
     const toggleMenu = () => {
@@ -32,7 +32,6 @@ const Navbar = () => {
                         </div>
                         <div id='container3'>
                             <nav className='navbar-list' onClick={() => navigate('/leadership')}>About us</nav>
-
                             <div className='navbar-lists'>
                                 <div className='nav-item-wrapper'>
                                     <nav className='navbar-list'>Our Funds</nav>
@@ -142,9 +141,19 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div id='rightsideofthenavbar'>
-                        <button className='Navbarbuttons'>
+                        {/* <button className='Navbarbuttons'>
                             <span id='button1' onClick={() => navigate('/signup')} className='cursor-pointer'>
                                 Join the waiting list
+                            </span>
+                        </button> */}
+                        <button className='default-white-button'>
+                            <span id='button1' className='cursor-pointer'>
+                                For Distributor
+                            </span>
+                        </button>
+                        <button className='default-black-button'>
+                            <span id='button1' className='cursor-pointer'>
+                                For Investor
                             </span>
                         </button>
 
@@ -334,7 +343,7 @@ const Navbar = () => {
                                         <img src={calculatorIcon} alt="" className='calculatoricon' />
                                         <span className='textforsmallmobilesections'>Investor Corner</span>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         ) : (

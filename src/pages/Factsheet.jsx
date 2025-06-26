@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import dropdown from '../assets/dropdown.svg'
 import Navbar from '../Navbar'
 import logo from '../assets/Logo.svg'   // Updated to match the correct case
@@ -9,9 +9,28 @@ import insta from '../assets/insta.svg'
 import linkedin from '../assets/linkedin.svg'
 import twitter from '../assets/twitter.svg'
 import youtube from '../assets/youtube.svg'
-
+import { useRef } from 'react'
 
 const Factsheet = () => {
+    const [filterdropdownforsheets, Setfilterdropdownforsheets] = useState(false);
+    const [selectedfiltereddropdown, Setselectedfiltereddropdown] = useState('Alphabetical');
+    const ref = useRef(null);
+    const toggleDropdown = () => {
+        Setfilterdropdownforsheets(!filterdropdownforsheets);
+    }
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (ref.current && !ref.current.contains(event.target)) {
+                Setfilterdropdownforsheets(false);
+            }
+        }
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        }
+    }, [ref]);
+
     return (
         <>
             <Navbar />
@@ -41,14 +60,54 @@ const Factsheet = () => {
                         <span id='righttextofmiddlesection'>
                             Sort by
                         </span>
-                        <div id='rightsectionofmiddlesectiondropdown'>
-                            <span id='righttextofmiddlesectiondropdown'>
-                                Alphabetical
-                            </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M11.9998 12.1718L9.17184 9.34277L7.75684 10.7568L11.9998 14.9998L16.2428 10.7568L14.8278 9.34277L11.9998 12.1718Z" fill="#AD8E53" />
-                            </svg>
-                        </div>
+                        {
+                            !filterdropdownforsheets ? (
+                                <button id='rightsectionofmiddlesectiondropdown' onClick={toggleDropdown}>
+                                    <span id='righttextofmiddlesectiondropdown'>
+                                        Alphabetical
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M11.9998 12.1718L9.17184 9.34277L7.75684 10.7568L11.9998 14.9998L16.2428 10.7568L14.8278 9.34277L11.9998 12.1718Z" fill="#AD8E53" />
+                                    </svg>
+                                </button>
+                            ) : (
+                                <>
+                                    <button id='rightsectionofmiddlesectiondropdown' onClick={toggleDropdown}>
+                                        <span id='righttextofmiddlesectiondropdown'>
+                                            Alphabetical
+                                        </span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M11.9998 12.1718L9.17184 9.34277L7.75684 10.7568L11.9998 14.9998L16.2428 10.7568L14.8278 9.34277L11.9998 12.1718Z" fill="#AD8E53" />
+                                        </svg>
+                                    </button>
+                                    <div className='bg-white absolute top-[580px] right-3 w-48 p-2 shadow-2xl rounded-md z-10' ref={ref}>
+                                        <div className='flex flex-col gap-2'>
+                                            <div className='p-2 flex items-start bg-white hover:bg-[#FCF5E8] cursor-pointer'>
+                                                <span id='righttextofmiddlesectiondropdown'>
+                                                    All Categories
+                                                </span>
+                                            </div>
+                                            <div className='p-2 flex items-start bg-white hover:bg-[#FCF5E8] cursor-pointer'>
+                                                <span id='righttextofmiddlesectiondropdown'>
+                                                    Forms
+                                                </span>
+                                            </div>
+                                            <div className='p-2 flex items-start bg-white hover:bg-[#FCF5E8] cursor-pointer'>
+                                                <span id='righttextofmiddlesectiondropdown'>
+                                                    Information Documents
+                                                </span>
+                                            </div>
+                                            <div className='p-2 flex items-start bg-white hover:bg-[#FCF5E8] cursor-pointer'>
+                                                <span id='righttextofmiddlesectiondropdown'>
+                                                    Notices
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </>
+                            )
+                        }
+
                     </div>
                 </div>
                 <div id='bottomsectionofmiddlesection'>

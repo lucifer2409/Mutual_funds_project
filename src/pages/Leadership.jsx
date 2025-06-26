@@ -3,6 +3,7 @@ import Navbar from '../Navbar';
 import { Link } from 'react-router-dom';
 import '../App.css';
 import '../styles/Leadership.css';
+import Leaderscard from './Leaderscard';
 import close from '../assets/close.svg'; // Add close icon image
 import { useState } from 'react';
 import mapImage from '../assets/map.svg'; // You'll need to add this image
@@ -85,96 +86,12 @@ const Leadership = () => {
         <div className='flex flex-col items-center gap-[24px] w-[100%]'>
           <span id='leaderstext'>Leaders</span>
           <div className='flex items-center gap-[24px] w-[1240px] overflow-auto scroll-container' ref={scrollContainerRef} id='scrollablediv'>
-
-            <div className='cardsfortheleaders'>
-              <div id='frame1'>
-                <span className='topofframe1'>Prasanna Pathak</span>
-                <span className='bottomofframe1'>CEO</span>
-              </div>
-              <img src={leaderImage1} alt="" className='cardimage' />
-              <div className='bottomframe1'>
-                <div className='leftsideofbottomframe1'>
-                  <span id='readpreview'>Read Preview</span>
-                  <img src={rightarrow2} alt="" id='rightarrow2' />
-                </div>
-                <div id='rightsideofbottomframe1'>
-                  <img src={add} alt="" id='addicon' />
-                </div>
-              </div>
-            </div>
-
-
-            {/* <div className='card-back'>
-              <div id='insidecardback'>
-                <div id='topofinsidecardback'>
-                  spapa
-                </div>
-              </div>
-            </div> */}
-            <div className='cardsfortheleaders'>
-              <div id='frame1'>
-                <span className='topofframe1'>Prasanna Pathak</span>
-                <span className='bottomofframe1'>CEO</span>
-              </div>
-              <img src={leaderImage1} alt="" className='cardimage' />
-              <div className='bottomframe1'>
-                <div className='leftsideofbottomframe1'>
-                  <span id='readpreview'>Read Preview</span>
-                  <img src={rightarrow2} alt="" id='rightarrow2' />
-                </div>
-                <div id='rightsideofbottomframe1'>
-                  <img src={add} alt="" id='addicon' />
-                </div>
-              </div>
-            </div>
-            <div className='cardsfortheleaders'>
-              <div id='frame1'>
-                <span className='topofframe1'>Prasanna Pathak</span>
-                <span className='bottomofframe1'>CEO</span>
-              </div>
-              <img src={leaderImage1} alt="" className='cardimage' />
-              <div className='bottomframe1'>
-                <div className='leftsideofbottomframe1'>
-                  <span id='readpreview'>Read Preview</span>
-                  <img src={rightarrow2} alt="" id='rightarrow2' />
-                </div>
-                <div id='rightsideofbottomframe1'>
-                  <img src={add} alt="" id='addicon' />
-                </div>
-              </div>
-            </div>
-            <div className='cardsfortheleaders'>
-              <div id='frame1'>
-                <span className='topofframe1'>Prasanna Pathak</span>
-                <span className='bottomofframe1'>CEO</span>
-              </div>
-              <img src={leaderImage1} alt="" className='cardimage' />
-              <div className='bottomframe1'>
-                <div className='leftsideofbottomframe1'>
-                  <span id='readpreview'>Read Preview</span>
-                  <img src={rightarrow2} alt="" id='rightarrow2' />
-                </div>
-                <div id='rightsideofbottomframe1'>
-                  <img src={add} alt="" id='addicon' />
-                </div>
-              </div>
-            </div>
-            <div className='cardsfortheleaders'>
-              <div id='frame1'>
-                <span className='topofframe1'>Prasanna Pathak</span>
-                <span className='bottomofframe1'>CEO</span>
-              </div>
-              <img src={leaderImage1} alt="" className='cardimage' />
-              <div className='bottomframe1'>
-                <div className='leftsideofbottomframe1'>
-                  <span id='readpreview'>Read Preview</span>
-                  <img src={rightarrow2} alt="" id='rightarrow2' />
-                </div>
-                <div id='rightsideofbottomframe1'>
-                  <img src={add} alt="" id='addicon' />
-                </div>
-              </div>
-            </div>
+            <Leaderscard/>
+            <Leaderscard/>
+            <Leaderscard/>
+            <Leaderscard/>
+            <Leaderscard/>
+            <Leaderscard/>
           </div>
           <div
             id='rightscrolldiv'
@@ -193,7 +110,7 @@ const Leadership = () => {
           Trustee
         </span>
         <div className='flex items-center gap-[24px]' id='trusteescards'>
-          <div className='trusteecard'>
+          <div className='trusteecard' onClick={toggleReadMore}>
             <div id='topoftrusteecard'>
               <div id='imagedivfortrustee'>
                 <img src={leaderImage2} alt="Trustee" className='trusteeimage' />
@@ -216,7 +133,7 @@ const Leadership = () => {
             </div>
 
           </div>
-          <div className='trusteecard'>
+          <div className='trusteecard' onClick={toggleReadMore}>
             <div id='topoftrusteecard'>
               <div id='imagedivfortrustee'>
                 <img src={leaderImage2} alt="Trustee" className='trusteeimage' />
@@ -239,7 +156,7 @@ const Leadership = () => {
             </div>
 
           </div>
-          <div className='trusteecard'>
+          <div className='trusteecard' onClick={toggleReadMore}>
             <div id='topoftrusteecard'>
               <div id='imagedivfortrustee'>
                 <img src={leaderImage2} alt="Trustee" className='trusteeimage' />
@@ -262,7 +179,7 @@ const Leadership = () => {
             </div>
 
           </div>
-          <div className='trusteecard'>
+          <div className='trusteecard' onClick={toggleReadMore}>
             <div id='topoftrusteecard'>
               <div id='imagedivfortrustee'>
                 <img src={leaderImage2} alt="Trustee" className='trusteeimage' />
@@ -633,7 +550,7 @@ const Leadership = () => {
                   <img src={leaderImage2} alt="" />
                 </div>
                 <div id='closebuttonframe' onClick={toggleReadMore}>
-                  <img src={close} alt="" id='closeimage'/>
+                  <img src={close} alt="" id='closeimage' />
                 </div>
                 <div id='topsectionforreadmore'>
                   <span id='headingforreadmore'>Dr. Hukum Chand Jain</span>
