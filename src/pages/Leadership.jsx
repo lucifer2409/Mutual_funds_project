@@ -29,7 +29,7 @@ import mapimage from '../assets/mapimage.png'; // Add map image
 import layer0 from '../assets/layer0.png'; // Add layer image
 import buildingline from '../assets/buildingline.svg'; // Add building line image
 const Leadership = () => {
-  const [readmore, Setreadmore] = useState(true);
+  const [readmore, Setreadmore] = useState(false);
   const toggleReadMore = () => {
     // console.log('Read more clicked');
     Setreadmore(!readmore);
