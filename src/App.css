@@ -296,6 +296,140 @@ html {
   letter-spacing: -0.25px;
 }
 
+.popupcontainer {
+  display: flex;
+  width: 560px;
+  padding: 94px 24px 46px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  border-radius: 24px;
+  background: var(--BG_color1, #FFF);
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.10);
+}
+
+#contentframeforreadmore {
+  display: flex;
+  height: 315px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+
+#topsectionforreadmore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+}
+
+#headingforreadmore {
+  color: var(--Primarycolor, #282828);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  /* 150% */
+}
+
+#subheadingforreadmore {
+  color: var(--Primarycolor, #282828);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  align-self: stretch;
+  /* 171.429% */
+}
+
+.scrollable-div {
+  margin-left: 12px;
+}
+
+.scrollable-div::-webkit-scrollbar {
+  width: 4px;
+  /* try a little bigger to see it better */
+}
+
+/* Scrollbar track (the background area of the scrollbar) */
+.scrollable-div::-webkit-scrollbar-track {
+  background: var(--Color-3, #FCF5E8);
+  /* cream */
+}
+
+/* Scrollbar thumb (the draggable bar) */
+.scrollable-div::-webkit-scrollbar-thumb {
+  background: #000;
+  /* black */
+  height: 4px;
+  border-radius: 3px;
+}
+
+#bottomsectionforreadmore {
+  align-self: stretch;
+  color: var(--Grey_Color, #666);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  padding: 16px;
+  height: 240px;
+  overflow: auto;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+#imageframeforreadmore {
+  display: flex;
+  padding: 5.6px 0px 0px 12.6px;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  right: 655px;
+  top: 120px;
+  overflow: hidden;
+  border-radius: 140px;
+  background: var(--Primarycolor, #282828);
+}
+
+
+#closebuttonframe {
+  border-radius: 24px;
+  background: var(--Color-3, #FCF5E8);
+  position: absolute;
+  right: 460px;
+  display: flex;
+  padding: 4px;
+  align-items: center;
+  gap: 10px;
+  top: 200px;
+}
+
+#closebuttonframe:hover {
+  cursor: pointer;
+}
+
+#closeimage {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+#imageframeforreadmore>img {
+  width: 120.8px;
+  height: 128.216px;
+  aspect-ratio: 142.80 / 180.22;
+}
+
 #rightsidefortopsectionforotherinformationdivforanalyticspage {
   color: var(--Grey_Color, #666);
   font-feature-settings: 'liga' off, 'clig' off;
@@ -1295,6 +1429,8 @@ html {
 
 #section2foranalyticspage {
   display: flex;
+  height: 50vw;
+  overflow-y: scroll;
   flex-direction: column;
   align-items: flex-start;
   gap: 48px;
@@ -2171,6 +2307,17 @@ html {
   flex: 1 0 0;
   border-bottom: 4px solid #C49339;
   background: var(--BG_color1, #FFF);
+}
+
+.selectedoptionforanalyticspage:hover {
+  cursor: pointer;
+}
+
+
+.optionforanalyticspage:hover {
+  cursor: pointer;
+  /* background: var(--BG_color1, #FFF); */
+
 }
 
 .optionforanalyticspage {
@@ -5213,8 +5360,8 @@ html {
   /* Initially hidden */
   position: absolute;
   top: calc(100% + 15px);
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  transform: none;
   width: 702px;
   padding: 24px;
   border-radius: 16px;
@@ -5323,7 +5470,7 @@ html {
   /* Initially hidden */
   position: absolute;
   top: calc(100% + 15px);
-  left: 50%;
+  left: 0;
   transform: translateX(-50%);
   width: 555px;
   padding: 24px;
@@ -5347,8 +5494,8 @@ html {
   height: 220px;
   border-radius: 16px;
   top: calc(100% + 15px);
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%; */
+  transform: none;
   z-index: 1000;
   background: #282828;
   box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.08);
@@ -5625,6 +5772,11 @@ html {
   /* 150% */
   letter-spacing: 0.32px;
   text-transform: uppercase;
+}
+
+#readmore2:hover {
+  /* color: var(--SecondaryColor, #000); */
+  cursor: pointer;
 }
 
 #bottomoftrusteecard2 {
@@ -5951,15 +6103,6 @@ html {
   gap: 10px;
   border-radius: 24px;
   background: var(--Color-3, #FCF5E8);
-  color: #000;
-  text-align: center;
-  font-feature-settings: 'liga' off, 'clig' off;
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  width: 60px;
 }
 
 

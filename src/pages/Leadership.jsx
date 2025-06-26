@@ -3,6 +3,8 @@ import Navbar from '../Navbar';
 import { Link } from 'react-router-dom';
 import '../App.css';
 import '../styles/Leadership.css';
+import close from '../assets/close.svg'; // Add close icon image
+import { useState } from 'react';
 import mapImage from '../assets/map.svg'; // You'll need to add this image
 import logo from '../assets/Logo.svg';
 import timer from '../assets/timer.svg'; // Add timer icon image
@@ -27,6 +29,11 @@ import mapimage from '../assets/mapimage.png'; // Add map image
 import layer0 from '../assets/layer0.png'; // Add layer image
 import buildingline from '../assets/buildingline.svg'; // Add building line image
 const Leadership = () => {
+  const [readmore, Setreadmore] = useState(true);
+  const toggleReadMore = () => {
+    // console.log('Read more clicked');
+    Setreadmore(!readmore);
+  };
   const scrollContainerRef = useRef(null);
   const handleScroll = () => {
     if (scrollContainerRef.current) {
@@ -202,9 +209,9 @@ const Leadership = () => {
               </div>
             </div>
             <div id='bottomoftrusteecard2'>
-              <span id='readmore2'>
+              <button id='readmore2' onClick={toggleReadMore}>
                 Read more
-              </span>
+              </button>
               <img src={rightarrow2} alt="Right Arrow" id='rightarrow2' />
             </div>
 
@@ -225,9 +232,9 @@ const Leadership = () => {
               </div>
             </div>
             <div id='bottomoftrusteecard2'>
-              <span id='readmore2'>
+              <button id='readmore2' onClick={toggleReadMore}>
                 Read more
-              </span>
+              </button>
               <img src={rightarrow2} alt="Right Arrow" id='rightarrow2' />
             </div>
 
@@ -248,9 +255,9 @@ const Leadership = () => {
               </div>
             </div>
             <div id='bottomoftrusteecard2'>
-              <span id='readmore2'>
+              <button id='readmore2' onClick={toggleReadMore}>
                 Read more
-              </span>
+              </button>
               <img src={rightarrow2} alt="Right Arrow" id='rightarrow2' />
             </div>
 
@@ -271,9 +278,9 @@ const Leadership = () => {
               </div>
             </div>
             <div id='bottomoftrusteecard2'>
-              <span id='readmore2'>
+              <button id='readmore2' onClick={toggleReadMore}>
                 Read more
-              </span>
+              </button>
               <img src={rightarrow2} alt="Right Arrow" id='rightarrow2' />
             </div>
 
@@ -616,6 +623,32 @@ const Leadership = () => {
           Copyright © 2025 Wealth Company Private Limited. | All rights reserved.
         </span>
       </div >
+
+      {
+        readmore && (
+          <div className='z-1 bg-black-500/50 fixed inset-0 flex items-center justify-center'>
+            <div className='popupcontainer'>
+              <div id='contentframeforreadmore'>
+                <div id='imageframeforreadmore'>
+                  <img src={leaderImage2} alt="" />
+                </div>
+                <div id='closebuttonframe' onClick={toggleReadMore}>
+                  <img src={close} alt="" id='closeimage'/>
+                </div>
+                <div id='topsectionforreadmore'>
+                  <span id='headingforreadmore'>Dr. Hukum Chand Jain</span>
+                  <span id='subheadingforreadmore'>Trustee</span>
+                </div>
+                <div id='bottomsectionforreadmore' className='scrollable-div'>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+              </div>
+            </div>
+          </div>
+        )
+      }
     </>
   );
 };

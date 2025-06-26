@@ -3,31 +3,40 @@ import Navbar from '../Navbar'
 import graph from '../assets/graph.svg'
 import dropdown from '../assets/dropdown.svg'
 import piegraph from '../assets/piegraph.svg'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import avatar2 from '../assets/avatar2.png'
 import divider from '../assets/divider.svg'
 const Analyticspage = () => {
+    const scrollto = (id) => {
+        const element = document.getElementById(id);
+
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+    const [selectedOption, setSelectedOption] = useState('Fund Summary');
     return (
         <>
             <Navbar />
             <div id='maindivforanalyticspage'>
                 <div id='leftdivforanalyticspage'>
                     <div id='section1foranalyticspage'>
-                        <div className='selectedoptionforanalyticspage'>
+                        <button className={selectedOption === 'Fund Summary' ? 'selectedoptionforanalyticspage' : 'optionforanalyticspage'} onClick={() => { scrollto('section1ofsection2foranalyticspage'); setSelectedOption('Fund Summary'); }}>
                             Fund Summary
-                        </div>
-                        <div className='optionforanalyticspage'>
+                        </button>
+                        <button className={selectedOption === 'Portfolio' ? 'selectedoptionforanalyticspage' : 'optionforanalyticspage'} onClick={() => { scrollto('section2ofsection2foranalyticspage'); setSelectedOption('Portfolio'); }}>
                             Portfolio
-                        </div>
-                        <div className='optionforanalyticspage'>
+                        </button>
+                        <button className={selectedOption === 'Performance' ? 'selectedoptionforanalyticspage' : 'optionforanalyticspage'} onClick={() => { scrollto('section3ofsection2foranalyticspage'); setSelectedOption('Performance'); }}>
                             Performance
-                        </div>
-                        <div className='optionforanalyticspage'>
+                        </button>
+                        <button className={selectedOption === 'Fund Details' ? 'selectedoptionforanalyticspage' : 'optionforanalyticspage'} onClick={() => { scrollto('section5ofsection2foranalyticspage'); setSelectedOption('Fund Details'); }}>
                             Fund Details
-                        </div>
-                        <div className='optionforanalyticspage'>
+                        </button>
+                        <button className={selectedOption === 'FAQs' ? 'selectedoptionforanalyticspage' : 'optionforanalyticspage'} onClick={() => { scrollto('faqsection2div'); setSelectedOption('FAQs'); }}>
                             FAQs
-                        </div>
+                        </button>
                     </div>
                     <div id='section2foranalyticspage'>
                         <div id='section1ofsection2foranalyticspage'>
