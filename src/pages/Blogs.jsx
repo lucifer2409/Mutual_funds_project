@@ -25,11 +25,17 @@ const Blogs = () => {
                 </div>
                 <div id='searchbarforblogspage'>
                     <img src={search} alt="search" id='searchiconforblogspage' />
-                    <input type="text" placeholder='Search blogs' id='searchinputforblogspage' />
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M13.1726 12L8.92957 7.75699C8.5391 7.36652 8.5391 6.73345 8.92957 6.34299C9.32003 5.95252 9.9531 5.95252 10.3436 6.34299L15.2935 11.2929C15.684 11.6834 15.684 12.3166 15.2935 12.7071L10.3436 17.657C9.9531 18.0475 9.32003 18.0475 8.92957 17.657C8.5391 17.2665 8.5391 16.6335 8.92957 16.243L13.1726 12Z" fill="#404040" className='rightarrow' />
-                    </svg>
-
+                    <input
+                        type="text"
+                        placeholder='Search for blogs, topics, or keywords...'
+                        id='searchinputforblogspage'
+                        aria-label="Search blogs"
+                    />
+                    <div className="search-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#000">
+                            <path d="M13.1726 12L8.92957 7.75699C8.5391 7.36652 8.5391 6.73345 8.92957 6.34299C9.32003 5.95252 9.9531 5.95252 10.3436 6.34299L15.2935 11.2929C15.684 11.6834 15.684 12.3166 15.2935 12.7071L10.3436 17.657C9.9531 18.0475 9.32003 18.0475 8.92957 17.657C8.5391 17.2665 8.5391 16.6335 8.92957 16.243L13.1726 12Z" />
+                        </svg>
+                    </div>
                 </div>
             </div>
             <div id='middlesectionforblogspage'>

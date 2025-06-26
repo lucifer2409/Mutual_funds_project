@@ -10,25 +10,38 @@ import facebook from '../assets/facebook.svg'
 import linkedin from '../assets/linkedin.svg'
 import twitter from '../assets/twitter.svg'
 import { Link } from 'react-router-dom'
+import divider from '../assets/divider.svg'
 import youtube from '../assets/youtube.svg'
-
+import { useState } from 'react'
 
 const Downloaddocumentspage = () => {
+    const [isdropdownopen, setIsDropdownOpen] = useState(false);
+    const handledropdown = () => {
+        setIsDropdownOpen(!isdropdownopen);
+    }
     return (
         <>
             <Navbar />
             <div id='topsectionfordownloaddocumentspage'>
                 <div id='insidetopsection2'>
                     <h1 id='headingoftopsection2'>Download Documents</h1>
-                    <div id='searchbarfordownloaddocumentspage'>
-                        <img src={search} alt="Search" id='searchicon' />
-                        <input type="text" id='searchboxfordownloaddocumentspage' placeholder='Search here' />
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M13.1726 12L8.92957 7.75699C8.5391 7.36652 8.5391 6.73345 8.92957 6.34299C9.32003 5.95252 9.9531 5.95252 10.3436 6.34299L15.2935 11.2929C15.684 11.6834 15.684 12.3166 15.2935 12.7071L10.3436 17.657C9.9531 18.0475 9.32003 18.0475 8.92957 17.657C8.5391 17.2665 8.5391 16.6335 8.92957 16.243L13.1726 12Z" fill="#404040" />
-                        </svg>
+                    <div id='searchbarforblogspage'>
+                        <img src={search} alt="search" id='searchiconforblogspage' />
+                        <input
+                            type="text"
+                            placeholder='Search for blogs, topics, or keywords...'
+                            id='searchinputforblogspage'
+                            aria-label="Search blogs"
+                        />
+                        <div className="search-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#000">
+                                <path d="M13.1726 12L8.92957 7.75699C8.5391 7.36652 8.5391 6.73345 8.92957 6.34299C9.32003 5.95252 9.9531 5.95252 10.3436 6.34299L15.2935 11.2929C15.684 11.6834 15.684 12.3166 15.2935 12.7071L10.3436 17.657C9.9531 18.0475 9.32003 18.0475 8.92957 17.657C8.5391 17.2665 8.5391 16.6335 8.92957 16.243L13.1726 12Z" />
+                            </svg>
+                        </div>
                     </div>
+
                     <div id='filterfordownloaddocumentspage'>
-                        <div id='leftfilterfordownloaddocumentspage'>
+                        <div id='leftfilterfordownloaddocumentspage' onClick={handledropdown} className='cursor-pointer'>
                             <span id='textforleftfilter'>All Categories</span>
                             <img src={dropdown} alt="" className='dropdownicon' />
                         </div>
@@ -340,6 +353,16 @@ const Downloaddocumentspage = () => {
                     Copyright © 2025 Wealth Company Private Limited. | All rights reserved.
                 </span>
             </div>
+            {
+                isdropdownopen && (
+                    <div className='absolute top-[365px] left-[104px] flex items-start space-x-4 rounded-lg bg-white shadow-md flex-col gap-1 w-[269px]'>
+                        <div className='p-3 text-[14px] hover:bg-[#FCF5E8] w-full cursor-pointer dropdown-text'>All Categories</div>
+                        <div className='p-3 text-[14px] hover:bg-[#FCF5E8] w-full cursor-pointer dropdown-text'>Forms</div>
+                        <div className='p-3 text-[14px] hover:bg-[#FCF5E8] w-full cursor-pointer dropdown-text'>Information Documents</div>
+                        <div className='p-3 text-[14px] hover:bg-[#FCF5E8] w-full cursor-pointer dropdown-text'>Product Updates</div>
+                    </div>
+                )
+            }
         </>
     )
 }
